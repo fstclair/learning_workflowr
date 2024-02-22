@@ -12,6 +12,7 @@ library("workflowr")
 # Start a new workflowr project
 #wflow_start("learning_workflowr") #naming the new project
 
+
 # Build the site
 wflow_build()
 
@@ -81,5 +82,19 @@ wflow_publish(c("analysis/index.Rmd", "analysis/first-analysis.Rmd"),
 wflow_status() #up to date
 
 #commit push
+
+
+## --------------------
+# Notes on 2.22 ------
+# - adding more into workflowr
+
+
+wflow_open("analysis/workflowr_setup.Rmd")
+
+wflow_publish(c("analysis/index.Rmd", "analysis/workflowr_setup.Rmd"),
+           "Add instructions for workflowr use")
+
+wflow_build()
+
 
 
