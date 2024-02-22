@@ -64,7 +64,20 @@ wflow_git_push()
 
 #### to fix problem above: run 'git push -u origin master' in terminal and restart R, manually push
 
+## now have a website, lets add data
+
+wflow_open("analysis/first-analysis.Rmd")
+
+#opening the index and adding a link to view results on intro page Click on this [link](first-analysis.html) to see my results.
+wflow_open("analysis/index.Rmd")
 
 
+#view the status of the workflowr project
+wflow_status()
 
+wflow_publish(c("analysis/index.Rmd", "analysis/first-analysis.Rmd"),
+              "Add my first analysis") #publish unp
 
+wflow_status() #up to date
+
+#commit push
