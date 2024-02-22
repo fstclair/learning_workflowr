@@ -62,8 +62,7 @@ wflow_git_push()
 #
 #   git push -u origin master
 
-
-
+#### to fix problem above: run 'git push -u origin master' in terminal and restart R, manually push
 
 
 
