@@ -10,7 +10,7 @@ library("workflowr")
 # - wflow_git_config(user.name = "fstclair", user.email = "fstclair@villanova.edu")
 
 # Start a new workflowr project
-wflow_start("learning_workflowr") #naming the new project
+#wflow_start("learning_workflowr") #naming the new project
 
 # Build the site
 wflow_build()
