@@ -1,5 +1,5 @@
 ---
-title: "First Analysis"
+title: "Buckwheat and sunflower pollen exine wash attachment assay: individual rosettes"
 author: "fstclair"
 date: "2024-02-21"
 output: workflowr::wflow_html
@@ -7,13 +7,53 @@ editor_options:
   chunk_output_type: console
 ---
 
-## *Practicing*
+## *Unfinished boxplot*
 
-Inserting a box plot of car data
+### **Description**
 
-```{r}
 
-boxplot(cars)
+Number of individual rosettes counted pre-wash and after 1-4 washes of buckwheat (bw) or sunflower (sf) exine media.
+
+Exine media wash was followed by a gentle wash of PBS for clear imaging of 25 random fields for analysis. 
+
+-------------
+
+
+\captionof{figure}{Box plot of bw and sf wash attachment assay -- bw in orange and sf in yellow.}
+```{r, echo=FALSE, message=FALSE}
+
+#import the data sfbw_w_aa_ir.csv
+
+#read.csv("sfbw_w_aa_ir.csv")
+
+df <- read.csv("~/Desktop/Coding/r_examples/practice_plots/sfbw_w_aa_ir.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+DF <- df %>% pivot_longer(everything(), names_to = "var",values_to = "values") #use 'pivot_longer' function from 'tidyr' package to transform data into two columns with the first one being the name of the condition and the second one contains values and set to DF:
+
+
+col <- c("coral", "goldenrod1", "coral1", "goldenrod2", "coral2", "goldenrod3", "coral3", "goldenrod4", "coral4", "saddlebrown" ) #set colors for boxes
+
+
+# grouped boxplot -- *WOP*
+# ggplot(data, aes(x=variety, y=note, fill=treatment)) + 
+#   geom_boxplot()
+
+
+
+g <-
+  ggplot(DF, aes(x = var, y = values, fill = var)) + #using DF, x are the variables and y are the values
+  labs(x = "Wash Number", y = "Number of individual rosettes") + #set x and y labels
+  scale_fill_manual(values = col) + #manually fill the boxes with preset colors
+  theme_classic()
+
+
+#create the boxplot
+g + geom_boxplot()
 
 ```
+\captionof{figure}{Box plot of bw and sf wash attachment assay -- bw in orange and sf in yellow.}
+
 
