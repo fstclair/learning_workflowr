@@ -1,0 +1,19 @@
+---
+title: "First Analysis"
+author: "fstclair"
+date: "2024-02-21"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## *Practicing*
+
+Inserting a box plot of car data
+
+```{r}
+
+boxplot(cars)
+
+```
+
