@@ -94,7 +94,6 @@ wflow_open("analysis/workflowr_setup.Rmd")
 wflow_publish(c("analysis/index.Rmd", "analysis/workflowr_setup.Rmd"),
            "Add instructions for workflowr use")
 
-wflow_build()
 
 
 
