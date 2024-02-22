@@ -1,0 +1,48 @@
+---
+title: "workflowr notes"
+author: "Faith St. Clair"
+format: 
+  html:
+    toc: true
+    theme: morph
+editor: source
+include: false
+linkcolor: 'darkmagenta'
+---
+
+# **Learning how to use `workflowr`**
+
+
+## [**General workflow**](https://cran.r-project.org/web/packages/workflowr/vignettes/wflow-01-getting-started.html)
+
+This is the general workflow:
+
+1. Open a new or existing R Markdown file in `analysis/` (optionally using `wflow_open()`)
+
+2. Perform your analysis in the R Markdown file (For RStudio users: to quickly develop the code I recommend executing the code in the R console via Ctrl-Enter to send one line or Ctrl-Alt-C to execute the entire code chunk)
+
+3. Run `wflow_build()` to view the results as they will appear on the website (alternatively press the Knit button in RStudio)
+
+4. Go back to step 2 until you are satisfied with the result
+
+5. Run `wflow_publish()` to commit the source files (R Markdown files or other files in `code/`, `data/`, and `output/`), build the HTML files, and commit the HTML files
+
+6. Push the changes to GitHub or GitLab with `wflow_git_push()` (or git push in the Terminal)
+
+This ensures that the code version recorded at the top of an HTML file corresponds to the state of the Git repository at the time it was built.
+
+
+*The only exception to this workflow is if you are updating the aesthetics of your website (e.g. anytime you make edits to `analysis/_site.yml`). In this case you’ll want to update all the published HTML files, regardless of whether or not their corresponding R Markdown files have been updated. To republish every HTML page, run `wflow_publish()` with `republish = TRUE`. This behavior is only previewed below by specifying `dry_run = TRUE`.*
+**
+
+## [**Customize your research project**](https://cran.r-project.org/web/packages/workflowr/vignettes/wflow-02-customization.html)
+
+
+### **Adding project details**
+
+workflowr automatically creates many files when the project is first started. As a first step for customizing your site, add the following information:
+
+- Briefly describe your project in `analysis/index.Rmd`
+- Share details about yourself in `analysis/about.Rmd`
+- State a software license in `analysis/license.Rmd`. See [A Quick Guide to Software Licensing for the Scientist-Programmer](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598) by Morin et al., 2012 for advice. If you’re ambivalent, the MIT license is a standard choice.
+

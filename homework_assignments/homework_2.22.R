@@ -81,3 +81,5 @@ wflow_publish(c("analysis/index.Rmd", "analysis/first-analysis.Rmd"),
 wflow_status() #up to date
 
 #commit push
+
+
