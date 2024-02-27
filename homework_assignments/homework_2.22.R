@@ -89,10 +89,10 @@ wflow_status() #up to date
 # - adding more into workflowr
 
 
-wflow_open("analysis/workflowr_setup.Rmd")
+wflow_open("about.Rmd")
 
 wflow_publish("analysis/*Rmd", #asterisk is a wildcard nd publish anything in Rmd file type
-           "Add instructions for workflowr use")
+           "Publish about page and all pages")
 
 
 wflow_git_push()
