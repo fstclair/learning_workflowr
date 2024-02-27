@@ -91,7 +91,7 @@ wflow_status() #up to date
 
 wflow_open("analysis/workflowr_setup.Rmd")
 
-wflow_publish(c("analysis/index.Rmd", "analysis/workflowr_setup.Rmd"),
+wflow_publish("analysis/*Rmd", #asterisk is a wildcard nd publish anything in Rmd file type
            "Add instructions for workflowr use")
 
 
