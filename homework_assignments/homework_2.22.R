@@ -95,5 +95,6 @@ wflow_publish(c("analysis/index.Rmd", "analysis/workflowr_setup.Rmd"),
            "Add instructions for workflowr use")
 
 
+wflow_git_push()
 
-
+wflow_git_commit(all=TRUE)
