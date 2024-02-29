@@ -70,6 +70,7 @@ ggplot(df, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 ### Damaged rosettes
 
 
+
 ```{r damaged_rosettes, echo=FALSE, message=FALSE}
 
 #import the data sfbw_w_aa_dr.csv

@@ -98,3 +98,13 @@ wflow_publish("analysis/*Rmd", #asterisk is a wildcard nd publish anything in Rm
 wflow_git_push()
 
 wflow_git_commit(all=TRUE)
+
+
+
+# creating a new file so i can add pictures
+
+dir.create("docs/assets")
+
+
+
+
