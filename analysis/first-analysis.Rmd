@@ -126,11 +126,7 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 ### BW
 
-```{r echo=FALSE}
-library(knitr)
-knitr::include_graphics("images/bw1.png")
-```
 
-![](images/bw1.png) ![](images/bw2.png)
+![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw1.png) ![](~/Desktop/Coding/workflowr/learning_workflowrimages/bw2.png)
 
-![](images/bw3.png) ![](images/bw4.png)
+![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw3.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw4.png)
