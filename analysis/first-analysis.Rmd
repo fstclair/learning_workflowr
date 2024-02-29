@@ -126,7 +126,6 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 ### BW
 
-
 ![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw1.png) ![](~/Desktop/Coding/workflowr/learning_workflowrimages/bw2.png)
 
 ![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw3.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/images/bw4.png)
