@@ -12,4 +12,4 @@ Welcome to my research website!
 
 I research the effects of different pollen diets on *C. bombi*, a trypanosomatid parasite of bumblebees, in an effort to reduce infection of these common pathogens.
 
-[Box plot](first-analysis.html) of BW and SF wash attachment assay -- individual rosettes (WOP). 
+[Box plot](first-analysis.html) of BW and SF wash attachment assay -- individual rosettes (WIP). 

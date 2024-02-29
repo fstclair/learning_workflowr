@@ -1,5 +1,5 @@
 ---
-title: "Buckwheat and sunflower pollen exine wash attachment assay: individual rosettes"
+title: "Buckwheat and sunflower pollen exine wash attachment assay: intact and damaged rosettes"
 author: "fstclair"
 date: "2024-02-21"
 output: workflowr::wflow_html
@@ -7,20 +7,24 @@ editor_options:
   chunk_output_type: console
 ---
 
-## *Unfinished boxplot*
+# Box plot of first rep of BW & SF wash attachment assay
 
-### **Description**
+---
+
+#### Description
 
 
-Number of individual rosettes counted pre-wash and after 1-4 washes of buckwheat (bw) or sunflower (sf) exine media.
+Number of intact or damaged rosettes counted pre-wash (labeled START) and after 1-4 washes of buckwheat (BW) or sunflower (SF) exine media.
 
 Exine media wash was followed by a gentle wash of PBS for clear imaging of 25 random fields for analysis. 
 
--------------
+<br>
 
+---
 
-\captionof{figure}{Box plot of bw and sf wash attachment assay -- bw in orange and sf in yellow.}
-```{r, echo=FALSE, message=FALSE}
+### Intact rosettes
+
+```{r intact_rosettes, echo=FALSE, message=FALSE}
 
 #import the data sfbw_w_aa_ir.csv
 
@@ -31,29 +35,100 @@ df <- read.csv("~/Desktop/Coding/r_examples/practice_plots/sfbw_w_aa_ir.csv") #s
 library(tidyr)
 library(dplyr)
 library(ggplot2)
-DF <- df %>% pivot_longer(everything(), names_to = "var",values_to = "values") #use 'pivot_longer' function from 'tidyr' package to transform data into two columns with the first one being the name of the condition and the second one contains values and set to DF:
 
 
-col <- c("coral", "goldenrod1", "coral1", "goldenrod2", "coral2", "goldenrod3", "coral3", "goldenrod4", "coral4", "saddlebrown" ) #set colors for boxes
-
-
-# grouped boxplot -- *WOP*
-# ggplot(data, aes(x=variety, y=note, fill=treatment)) + 
+# grouped boxplot
+# ggplot(df, aes(x=WASH, y=ROSETTES, fill=TREATMENT)) +
 #   geom_boxplot()
 
+#reorder the x-axis groups
+df$WASH <- factor(df$WASH, levels = c("START", "1", "2", "3", "4"))
 
 
-g <-
-  ggplot(DF, aes(x = var, y = values, fill = var)) + #using DF, x are the variables and y are the values
-  labs(x = "Wash Number", y = "Number of individual rosettes") + #set x and y labels
-  scale_fill_manual(values = col) + #manually fill the boxes with preset colors
+#set the colors
+
+colors <- c("coral", "goldenrod1")
+
+#now make the graph
+# Plot with reordered groups
+ggplot(df, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
+  geom_boxplot() +
+  labs(x = "Wash number",
+       y = "Number of intact rosettes",
+       fill = "Treatment") +
+  scale_fill_manual(values = colors) +
   theme_classic()
 
 
-#create the boxplot
-g + geom_boxplot()
+```
+
+<br>
+
+---
+
+
+### Damaged rosettes
+
+
+```{r damaged_rosettes, echo=FALSE, message=FALSE}
+
+#import the data sfbw_w_aa_dr.csv
+
+#read.csv("sfbw_w_aa_dr.csv")
+
+df1 <- read.csv("~/Desktop/Coding/r_examples/practice_plots/sfbw_w_aa_dr.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+
+# grouped boxplot
+# ggplot(df, aes(x=WASH, y=ROSETTES, fill=TREATMENT)) +
+#   geom_boxplot()
+
+#reorder the x-axis groups
+df1$WASH <- factor(df1$WASH, levels = c("START", "1", "2", "3", "4"))
+
+
+#set the colors
+
+colors <- c("coral", "goldenrod1")
+
+#now make the graph
+# Plot with reordered groups
+ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
+  geom_boxplot() +
+  labs(x = "Wash number",
+       y = "Number of intact rosettes",
+       fill = "Treatment") +
+  scale_fill_manual(values = colors) +
+  theme_classic()
+
 
 ```
-\captionof{figure}{Box plot of bw and sf wash attachment assay -- bw in orange and sf in yellow.}
+
+
+<br>
+
+---
+
+> *C. bombi* rosettes washed with SF exine media experience more damaged rosettes than when washed with BW exine media. 
+
+---
+
+<br>
+
+
+# Sample images
+
+## After wash 4
+
+### BW
+
+```{r}
+knitr::include_graphics("~/Desktop/Coding/workflowr/learning_workflowr/images/bw1.png")
+```
+
 
 
