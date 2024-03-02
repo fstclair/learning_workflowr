@@ -155,8 +155,3 @@ Created using [biorender](https://www.biorender.com/)
 
 
 
-```{r echo=FALSE}
-wflow_build()
-wflow_git_commit("docs/assets/images/*.png", "Add external images of bw and sf washes")
-```
-
