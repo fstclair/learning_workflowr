@@ -105,4 +105,4 @@ wflow_git_commit(all=TRUE)
 
 dir.create("docs/assets")
 
-\
+
