@@ -136,9 +136,14 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 ### SF
 
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/images/sf1.PNG) ![](~/Desktop/Coding/workflowr/learning_workflowrimages/sf2.PNG)
+![](/images/sf1.PNG) ![](images/sf2.PNG)
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/images/sf3.PNG) ![](~/Desktop/Coding/workflowr/learning_workflowr/images/sf4.PNG)
+![](images/sf3.PNG) ![](images/sf4.PNG)
+
+```{r echo=FALSE}
+library(workflowr)
+wflow_build()
+```
 
 
 <br>

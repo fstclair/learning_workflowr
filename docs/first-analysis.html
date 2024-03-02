@@ -373,7 +373,7 @@ attachment assay: intact and damaged rosettes</h1>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -384,8 +384,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -398,9 +398,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>learning_workflowr/</code> <span
@@ -423,18 +423,21 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
@@ -525,15 +528,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree58edc7eb896a7d670a01eb1a6efd17b8e6a75a80targetblank58edc7ea">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree2a69dff186bf3ba1a97d58c0da48434a241fab90targetblank2a69dffa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/fstclair/learning_workflowr/tree/58edc7eb896a7d670a01eb1a6efd17b8e6a75a80" target="_blank">58edc7e</a>
+<a href="https://github.com/fstclair/learning_workflowr/tree/2a69dff186bf3ba1a97d58c0da48434a241fab90" target="_blank">2a69dff</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree58edc7eb896a7d670a01eb1a6efd17b8e6a75a80targetblank58edc7ea"
+id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree2a69dff186bf3ba1a97d58c0da48434a241fab90targetblank2a69dffa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -543,7 +546,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/fstclair/learning_workflowr/tree/58edc7eb896a7d670a01eb1a6efd17b8e6a75a80" target="_blank">58edc7e</a>.
+<a href="https://github.com/fstclair/learning_workflowr/tree/2a69dff186bf3ba1a97d58c0da48434a241fab90" target="_blank">2a69dff</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -561,6 +564,9 @@ Ignored files:
     Ignored:    .DS_Store
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   analysis/first-analysis.Rmd
 
 </code></pre>
 <p>
@@ -606,6 +612,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/2a69dff186bf3ba1a97d58c0da48434a241fab90/docs/first-analysis.html" target="_blank">2a69dff</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-02-29
+</td>
+<td>
+analysis 1
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -1246,14 +1269,8 @@ src="/Users/faithstclair/Desktop/Coding/workflowr/learning_workflowr/images/bw4.
 </div>
 <div id="sf" class="section level3">
 <h3>SF</h3>
-<p><img
-src="/Users/faithstclair/Desktop/Coding/workflowr/learning_workflowr/images/sf1.png" />
-<img
-src="~/Desktop/Coding/workflowr/learning_workflowrimages/sf2.PNG" /></p>
-<p><img
-src="/Users/faithstclair/Desktop/Coding/workflowr/learning_workflowr/images/sf3.png" />
-<img
-src="/Users/faithstclair/Desktop/Coding/workflowr/learning_workflowr/images/sf4.png" /></p>
+<p><img src="/images/sf1.PNG" /> <img src="images/sf2.PNG" /></p>
+<p><img src="images/sf3.PNG" /> <img src="images/sf4.PNG" /></p>
 <p><br></p>
 <hr />
 </div>
