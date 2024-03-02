@@ -140,11 +140,6 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 ![](images/sf3.PNG) ![](images/sf4.PNG)
 
-```{r echo=FALSE}
-library(workflowr)
-wflow_build()
-```
-
 
 <br>
 
