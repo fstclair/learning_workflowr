@@ -5,12 +5,14 @@ navbar:
   left:
   - text: Home
     href: index.html
+  - text: 08.076 & WHA1 attachment assay
+    href: second-analysis.html
+  - text: BW & SF wash attachment assay
+    href: first-analysis.html
   - text: About
     href: about.html
   - text: License
     href: license.html
-  - text: BW & SF wash attachment assay
-    href: first-analysis.html
   right:
   - icon: fab fa-github
     text: Source code
