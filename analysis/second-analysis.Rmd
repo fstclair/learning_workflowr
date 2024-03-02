@@ -1,0 +1,19 @@
+---
+title: "Attachment assay between two cultured cell lines: 08.076 and WHA1"
+author: "fstclair"
+date: "2024-03-01"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+# Violin plots of 
+
+---
+
+#### Description
+
+```{r}
+
+```
+
