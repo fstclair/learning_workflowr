@@ -153,3 +153,10 @@ Created using [biorender](https://www.biorender.com/)
 
 ![](~/Desktop/Coding/workflowr/learning_workflowr/docs/assets/images/wash_protocol.png)
 
+
+
+```{r echo=FALSE}
+wflow_build()
+wflow_git_commit("docs/assets/images/*.png", "Add external images of bw and sf washes")
+```
+

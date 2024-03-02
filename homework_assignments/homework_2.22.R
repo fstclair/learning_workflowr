@@ -105,6 +105,4 @@ wflow_git_commit(all=TRUE)
 
 dir.create("docs/assets")
 
-![](assets/images/bw1.png)
-
-![](assets/images/bw1.png)
+\
