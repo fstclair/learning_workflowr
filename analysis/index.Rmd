@@ -10,7 +10,9 @@ editor_options:
 
 # Welcome to my research website!
 
-I research the effects of different pollen diets on *C. bombi*, a trypanosomatid parasite of bumblebees, in an effort to reduce infection of these common pathogens.
+## My name is Faith St. Clair -- I am a graduate student and research assistant at Villanova University with a focus in molecular and cell biology. 
+
+## I research the effects of different pollen diets on *C. bombi*, a trypanosomatid parasite of bumblebees, in an effort to reduce infection of these common pathogens.
 
 # About my project
 
