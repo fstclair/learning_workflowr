@@ -106,3 +106,38 @@ wflow_git_commit(all=TRUE)
 dir.create("docs/assets")
 
 wflow_open("analysis/second-analysis.Rmd")
+
+
+
+
+
+# grouped violin plot
+
+#install.packages("hrbrthemes")
+#install.packages("viridis")
+library(ggplot2)
+library(dplyr)
+library(forcats)
+library(hrbrthemes)
+library(viridis)
+
+
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/10_OneNumSevCatSubgroupsSevObs.csv", header=T, sep=",") %>%
+  mutate(tip = round(tip/total_bill*100, 1))
+
+
+data %>%
+  mutate(day = fct_reorder(day, tip)) %>%
+  mutate(day = factor(day, levels=c("Thur", "Fri", "Sat", "Sun"))) %>%
+  ggplot(aes(fill=sex, y=tip, x=day)) +
+  geom_violin(position="dodge", alpha=0.5, outlier.colour="transparent") +
+  scale_fill_viridis(discrete=T, name="") +
+  theme_ipsum()  +
+  xlab("") +
+  ylab("Tip (%)") +
+  ylim(0,40)
+
+
+
+
+
