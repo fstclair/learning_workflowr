@@ -7,13 +7,194 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Violin plots of 
+# Violin plots of *C. bombi* cell lines 08.076 and WHA1 attachment assay
 
 ---
 
 #### Description
 
-```{r}
+Quantifying the attachment efficiency of two culture-adapted cell lines to explore infection capabilities.
+
+Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
+
+After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for analysis. 
+
+<br>
+
+---
+
+### Single attached cells
+
+
+```{r single_attached_cells, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data aa_s.csv
+
+#read.csv("aa_s.csv")
+
+df <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/aa_s.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(hrbrthemes)
+library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("lightblue", "pink2")
+
+#now make the graph
+
+df %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill=CELLLINE, y=CELLS, x=HOUR)) +
+    geom_violin(position = "dodge") +
+  stat_summary(fun = "mean", fun.args = list(mult = 1),
+               geom="pointrange", color="black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_classic()  +
+    labs(x = "Hour",
+       y = "Number of individual attached cells",
+       fill = "Cell line")
+
 
 ```
+
+Figure 1. Grouped violin plot of 3 replicates of individually counted cells in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Diamonds represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 3).
+
+
+<br>
+
+---
+
+
+### Individual rosettes
+
+
+
+```{r individual_rosettes, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data aa_ir.csv
+
+#read.csv("aa_ir.csv")
+
+df1 <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/aa_ir.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(hrbrthemes)
+library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("lightblue", "pink2")
+
+#now make the graph
+
+df1 %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill=CELLLINE, y=CELLS, x=HOUR)) +
+    geom_violin(position = "dodge") +
+  stat_summary(fun = "mean", fun.args = list(mult = 1),
+               geom="pointrange", color="black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_classic()  +
+    labs(x = "Hour",
+       y = "Number of individual rosettes",
+       fill = "Cell line")
+
+```
+
+Figure 2.  Grouped violin plot of 3 replicates of individual rosettes counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Diamonds represent the mean. The data show in increase of WHA1 rosettes in all three time points. A decrease of WHA1 individual rosettes at 72 hours can be explained by the increase of WHA1 merged rosettes at 72 hours (see Figures 3 and 4).
+
+<br>
+
+---
+
+
+### Merged rosettes
+
+
+```{r merged_rosettes, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data aa_mr.csv
+
+#read.csv("aa_mr.csv")
+
+df2 <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/aa_mr.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(hrbrthemes)
+library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("lightblue", "pink2")
+
+#now make the graph
+
+df2 %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill=CELLLINE, y=CELLS, x=HOUR)) +
+    geom_violin(position = "dodge") +
+  stat_summary(fun = "mean", fun.args = list(mult = 1),
+               geom="pointrange", color="black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_classic()  +
+    labs(x = "Hour",
+       y = "Number of merged rosettes",
+       fill = "Cell line")
+
+```
+
+Figure 3.  Grouped violin plot of 3 replicates of merged rosettes counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Diamonds represent the mean. The data show that while the 08.076 cell line remains a consistent low amount of merged rosettes, the WHA1 cell line gradually increases in merged rosette counts over 72 hours.
+
+
+
+<br>
+
+---
+
+# Sample images
+
+![](~/Desktop/Coding/workflowr/learning_workflowr/docs/assets/images/sample.png)
+
+Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48, and 72 hours. A clear difference in attachment efficiency can be seen between the two cell lines, with a dramatic increase in attached cells in the WH line.
+
+
+<br>
+
+---
+
+> *C. bombi* cell line WHA1 has a greater attachment efficieny *in vitro* and has shown the ability to infect laboratory bumblebees (*in vivo* attachment) and will therefore be used for all future experiments. 
+
+---
+
+
+
+
+
+
 
