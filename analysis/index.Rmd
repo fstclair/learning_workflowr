@@ -12,20 +12,20 @@ editor_options:
 
 - My name is Faith St. Clair -- I am a graduate student and research assistant at Villanova University with a focus in molecular and cell biology. 
 
-- I research the effects of different pollen diets on *C. bombi*, a trypanosomatid parasite of bumblebees, in an effort to reduce infection of these common pathogens.
+- I research the effects of different pollen diets on attachment and infection of a parasite of bumblebees, *C. bombi*, and their impact on pollinator health and ecosystem status
 
-# About my project
+### About my project
 
 - Learn about the steps of [my project](about.html), the lab, and funding information.
 
-# Examining attachment effiencies of two culture-adapted cell lines
+### Examining attachment effiencies of two culture-adapted cell lines
 
 - [Violin plots](second-analysis.html) of cell lines 08.076 and WHA1 attachment assay.
 
-# Examining the effects of different pollen diets on swimming cells
+### Examining the effects of different pollen diets on swimming cells
 
 --
 
-# Examining the effects of different pollen washes on adhered cells
+### Examining the effects of different pollen washes on adhered cells
 
 - [Box plots](first-analysis.html) of BW and SF wash attachment assay -- intact and damaged rosettes. 

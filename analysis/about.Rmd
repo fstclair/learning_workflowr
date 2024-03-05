@@ -8,11 +8,13 @@ editor_options:
 ---
 
 
+---
 
-Reducing infection once and floral: Examining the effects of different pollen diets on *in vitro* growth and attachment of *C. bombi*, a parasite of bumblebees.
+> Reducing infection once and floral: Examining the effects of different pollen diets on *in vitro* growth and attachment of *C. bombi*, a parasite of bumblebees.
 
+---
 
-Methods:
+### Methods:
 
 1. Growth curves to observe and quantify *in vitro* swimming cell growth.
 
@@ -28,7 +30,21 @@ Methods:
 
 7. Proteomic analysis to observe different protein expression in swimming and adhered cells
 
+---
 
-Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University
+### Publications (in progress)
 
-This material is based upon work supported by the National Science Foundation under grant number 2128223.
+[Genetic modification of the bee parasite *Crithidia bombi* for improved visualization and protein localization](https://www.biorxiv.org/content/10.1101/2024.01.18.576273v1)
+
+---
+
+#### Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University
+
+---
+
+#### This material is based upon work supported by the National Science Foundation under grant number 2128223.
+
+---
+
+
+
