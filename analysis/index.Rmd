@@ -8,10 +8,22 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website!
+# Welcome to my research website!
 
 I research the effects of different pollen diets on *C. bombi*, a trypanosomatid parasite of bumblebees, in an effort to reduce infection of these common pathogens.
 
+# About my project
+
+- Learn about the steps of [my project](about.html), the lab, and funding information.
+
+# Examining attachment effiencies of two culture-adapted cell lines
+
 [Violin plots](second-analysis.html) of cell lines 08.076 and WHA1 attachment assay.
+
+# Examining the effects of different pollen diets on swimming cells
+
+--
+
+# Examining the effects of different pollen washes on adhered cells
 
 [Box plots](first-analysis.html) of BW and SF wash attachment assay -- intact and damaged rosettes. 
