@@ -1,0 +1,39 @@
+---
+title: "Growth of swimming C. bombi cells in the presence of SF and BW pollen exines"
+author: "fstclair"
+date: "2024-03-01"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+# Growth curves of swimming *C. bombi* in the presence of SF or BW exines
+
+---
+
+#### Description
+
+Quantifying swimming *C. bombi* cell growth in the presence of BW or SF pollen exines over 72 hours to explore pollen effects on the growth of swimming cells.
+
+*C. bombi* was transfected with an episomal construct containing Nanoluciferase (Nluc), a constitutively expressed Nluc reporter, and a Hygromycin cassette for selection.
+
+Growth was measured in Relative Light Units (RLU) using a plate reader and normalized to the plate using a standard dilution series from 1E1 to 1E6 cells/well to capture cell density in cells/mL.
+
+
+
+<br>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+

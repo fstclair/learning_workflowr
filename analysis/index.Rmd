@@ -24,7 +24,7 @@ editor_options:
 
 ### Examining the effects of different pollen diets on swimming cells
 
---
+-- [Line graph](third-analysis.hmtl) showing different pollen diets do not affect swimming *C. bombi* cells.
 
 ### Examining the effects of different pollen washes on adhered cells
 
