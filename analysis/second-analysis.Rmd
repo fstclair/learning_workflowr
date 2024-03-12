@@ -67,7 +67,7 @@ df %>%
 
 ```
 
-Figure 1. Grouped violin plot of 3 replicates of individually counted cells in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Diamonds represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 3).
+Figure 1. Grouped violin plot of 3 replicates of individually counted cells in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Diamonds represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 4).
 
 
 <br>
@@ -191,6 +191,14 @@ Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48,
 > *C. bombi* cell line WHA1 has a greater attachment efficieny *in vitro* and has shown the ability to infect laboratory bumblebees (*in vivo* attachment) and will therefore be used for all future experiments. 
 
 ---
+
+<br>
+
+# Protocol
+
+Adapted from [Denecke, S., 2022](https://doi.org/10.1101/2022.10.06.511084)
+
+![](~/Desktop/Coding/workflowr/learning_workflowr/docs/assets/images/aa_protocol.png)
 
 
 
