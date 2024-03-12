@@ -19,8 +19,6 @@ Quantifying swimming *C. bombi* cell growth in the presence of BW or SF pollen e
 
 Growth was measured in Relative Light Units (RLU) using a plate reader and normalized to the plate using a standard dilution series from 1E1 to 1E6 cells/well to capture cell density in cells/mL.
 
-
-
 <br>
 
 ---
