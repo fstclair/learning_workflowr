@@ -5,6 +5,8 @@ navbar:
   left:
   - text: Home
     href: index.html
+  - text: Swimming cell growth with BW & SF
+    href: third-analysis.html
   - text: 08.076 & WHA1 attachment assay
     href: second-analysis.html
   - text: BW & SF wash attachment assay
