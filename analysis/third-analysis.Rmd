@@ -1,5 +1,5 @@
 ---
-title: "Growth of swimming C. bombi cells in the presence of SF and BW pollen exines"
+title: "Measuring growth of swimming C. bombi cells in the presence of SF and BW pollen exines"
 author: "fstclair"
 date: "2024-03-01"
 output: workflowr::wflow_html
@@ -7,7 +7,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Growth curves of swimming *C. bombi* in the presence of SF or BW exines
+# Growth curve of swimming *C. bombi* in the presence of SF or BW exines
 
 ---
 
@@ -23,6 +23,36 @@ Growth was measured in Relative Light Units (RLU) using a plate reader and norma
 
 ---
 
+
+### Swimming cell growth with BW or SF pollen exines
+
+
+```{r}
+
+# Libraries
+library(ggplot2)
+library(dplyr)
+
+#upload data
+sc <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/swimming.csv") #set data name
+
+# Keep only 3 names
+sc1 <- sc %>% 
+  filter(treatment %in% c("Media", "BW Media", "SF Media")) 
+  
+#set colors
+cols <- c("blue", "coral", "goldenrod1")
+
+# Plot
+sc1 %>%
+  ggplot( aes(x=day, y=RLU, group=treatment, color=treatment)) +
+    geom_line() +
+  scale_y_log10() +
+  scale_fill_manual(values = cols)
+
+
+
+```
 
 
 
