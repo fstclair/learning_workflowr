@@ -22,7 +22,7 @@ wflow_build()
 #   3. Add new or copy existing R Markdown files to analysis/
 
 # Preview your changes
-wflow_build()
+wflow_build("analysis/*Rmd")
 
 #to view the site without first building any files
 wflow_view()
