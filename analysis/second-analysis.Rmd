@@ -179,7 +179,7 @@ Figure 3.  Grouped violin plot of 3 replicates of merged rosettes counted in cel
 
 # Sample images
 
-![](docs/sample.png)
+![](analysis/sample.png)
 
 Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48, and 72 hours. A clear difference in attachment efficiency can be seen between the two cell lines, with a dramatic increase in attached cells in the WH line.
 
@@ -198,7 +198,7 @@ Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48,
 
 Adapted from [Denecke, S., 2022](https://doi.org/10.1101/2022.10.06.511084)
 
-![](docs/aa_protocol.png)
+![](analysis/aa_protocol.png)
 
 
 
