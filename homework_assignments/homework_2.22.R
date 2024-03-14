@@ -91,6 +91,9 @@ wflow_status() #up to date
 
 wflow_open("about.Rmd")
 
+
+# Preview your changes
+wflow_build("analysis/*Rmd")
 wflow_publish("analysis/*Rmd", #asterisk is a wildcard nd publish anything in Rmd file type
            "Publish about page and all pages")
 
