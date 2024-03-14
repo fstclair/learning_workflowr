@@ -8,7 +8,11 @@ editor_options:
   chunk_output_type: console
 ---
 
+---
+
 # Welcome to my research website!
+
+---
 
 - My name is Faith St. Clair -- I am a graduate student and research assistant at Villanova University with a focus in molecular and cell biology. 
 
@@ -24,7 +28,9 @@ editor_options:
 
 ### Examining the effects of different pollen diets on swimming cells
 
--- [Line graph](third-analysis.hmtl) showing different pollen diets do not affect swimming *C. bombi* cells.
+- [Line graph](third-analysis.hmtl) showing different pollen diets do not affect swimming *C. bombi* cells.
+
+---
 
 ### Examining attachment effiencies of two culture-adapted cell lines
 
