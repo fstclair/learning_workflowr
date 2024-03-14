@@ -13,7 +13,7 @@
 
 <meta name="date" content="2024-03-01" />
 
-<title>Growth of swimming C. bombi cells in the presence of SF and BW pollen exines</title>
+<title>Measuring growth of swimming C. bombi cells in the presence of SF and BW pollen exines</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -368,8 +368,8 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Growth of swimming C. bombi cells in the
-presence of SF and BW pollen exines</h1>
+<h1 class="title toc-ignore">Measuring growth of swimming C. bombi cells
+in the presence of SF and BW pollen exines</h1>
 <h4 class="author">fstclair</h4>
 <h4 class="date">2024-03-01</h4>
 
@@ -379,7 +379,7 @@ presence of SF and BW pollen exines</h1>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -390,8 +390,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -400,13 +400,13 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2024-03-13
+<strong>Last updated:</strong> 2024-03-14
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>learning_workflowr/</code> <span
@@ -447,15 +447,125 @@ results.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtreed13d58174ea31112d4e6db535a9decf64fe23fc3targetblankd13d581a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the
+global environment can affect the analysis in your R Markdown file in
+unknown ways. For reproduciblity it’s best to always run the code in an
+empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20240221code">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Seed:</strong>
+<code>set.seed(20240221)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20240221code"
+class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20240221)</code> was run prior to running
+the code in the R Markdown file. Setting a seed ensures that any results
+that rely on randomness, e.g. subsampling or permutations, are
+reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Session information:</strong>
+recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded"
+class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package
+versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongabsolute">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>File paths:</strong> absolute </a>
+</p>
+</div>
+<div id="strongFilepathsstrongabsolute" class="panel-collapse collapse">
+<div class="panel-body">
+<p>
+Using absolute paths to the files within your workflowr project makes it
+difficult for you and others to run your code on a different machine.
+Change the absolute path(s) below to the suggested relative path(s) to
+make your code more reproducible.
+</p>
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th style="text-align:left;">
+absolute
+</th>
+<th style="text-align:left;">
+relative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+~/Desktop/Coding/workflowr/learning_workflowr/data/swimming.csv
+</td>
+<td style="text-align:left;">
+data/swimming.csv
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtreefe84fea5222af2e39d31cdf89da07d1a82ce5de5targetblankfe84feaa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/fstclair/learning_workflowr/tree/d13d58174ea31112d4e6db535a9decf64fe23fc3" target="_blank">d13d581</a>
+<a href="https://github.com/fstclair/learning_workflowr/tree/fe84fea5222af2e39d31cdf89da07d1a82ce5de5" target="_blank">fe84fea</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtreed13d58174ea31112d4e6db535a9decf64fe23fc3targetblankd13d581a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtreefe84fea5222af2e39d31cdf89da07d1a82ce5de5targetblankfe84feaa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -465,7 +575,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/fstclair/learning_workflowr/tree/d13d58174ea31112d4e6db535a9decf64fe23fc3" target="_blank">d13d581</a>.
+<a href="https://github.com/fstclair/learning_workflowr/tree/fe84fea5222af2e39d31cdf89da07d1a82ce5de5" target="_blank">fe84fea</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -483,6 +593,10 @@ Ignored files:
     Ignored:    .DS_Store
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Untracked files:
+    Untracked:  data/swimming.csv
+    Untracked:  data/swimming.xlsx
 
 </code></pre>
 <p>
@@ -528,6 +642,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/fstclair/learning_workflowr/blob/fe84fea5222af2e39d31cdf89da07d1a82ce5de5/analysis/third-analysis.Rmd" target="_blank">fe84fea</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-03-14
+</td>
+<td>
+Publish about page and all pages
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/25c6872fb7d9d898da0bb2c2fc2dcdb5f034995f/docs/third-analysis.html" target="_blank">25c6872</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-03-13
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -621,9 +769,9 @@ Add my third analysis
 </div>
 </div>
 <div
-id="growth-curves-of-swimming-c.-bombi-in-the-presence-of-sf-or-bw-exines"
+id="growth-curve-of-swimming-c.-bombi-in-the-presence-of-sf-or-bw-exines"
 class="section level1">
-<h1>Growth curves of swimming <em>C. bombi</em> in the presence of SF or
+<h1>Growth curve of swimming <em>C. bombi</em> in the presence of SF or
 BW exines</h1>
 <hr />
 <div id="description" class="section level4">
@@ -639,6 +787,83 @@ reader and normalized to the plate using a standard dilution series from
 1E1 to 1E6 cells/well to capture cell density in cells/mL.</p>
 <p><br></p>
 <hr />
+</div>
+<div id="swimming-cell-growth-with-bw-or-sf-pollen-exines"
+class="section level3">
+<h3>Swimming cell growth with BW or SF pollen exines</h3>
+<pre class="r"><code># Libraries
+library(ggplot2)
+library(dplyr)</code></pre>
+<pre><code>
+Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:stats&#39;:
+
+    filter, lag</code></pre>
+<pre><code>The following objects are masked from &#39;package:base&#39;:
+
+    intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>#upload data
+sc &lt;- read.csv(&quot;~/Desktop/Coding/workflowr/learning_workflowr/data/swimming.csv&quot;) #set data name
+
+# Keep only 3 names
+sc1 &lt;- sc %&gt;% 
+  filter(treatment %in% c(&quot;Media&quot;, &quot;BW Media&quot;, &quot;SF Media&quot;)) 
+  
+#set colors
+cols &lt;- c(&quot;blue&quot;, &quot;coral&quot;, &quot;goldenrod1&quot;)
+
+# Plot
+sc1 %&gt;%
+  ggplot( aes(x=day, y=RLU, group=treatment, color=treatment)) +
+    geom_line() +
+  scale_y_log10() +
+  scale_fill_manual(values = cols)</code></pre>
+<p><img src="figure/third-analysis.Rmd/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 4.3.2 (2023-10-31)
+Platform: aarch64-apple-darwin20 (64-bit)
+Running under: macOS Ventura 13.2.1
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: America/New_York
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] dplyr_1.1.4     ggplot2_3.4.4   workflowr_1.7.1
+
+loaded via a namespace (and not attached):
+ [1] gtable_0.3.4      jsonlite_1.8.8    compiler_4.3.2    highr_0.10       
+ [5] promises_1.2.1    tidyselect_1.2.0  Rcpp_1.0.12       stringr_1.5.1    
+ [9] git2r_0.33.0      callr_3.7.3       later_1.3.2       jquerylib_0.1.4  
+[13] scales_1.3.0      yaml_2.3.8        fastmap_1.1.1     R6_2.5.1         
+[17] labeling_0.4.3    generics_0.1.3    knitr_1.45        tibble_3.2.1     
+[21] munsell_0.5.0     rprojroot_2.0.4   bslib_0.6.1       pillar_1.9.0     
+[25] rlang_1.1.3       utf8_1.2.4        cachem_1.0.8      stringi_1.8.3    
+[29] httpuv_1.6.14     xfun_0.42         getPass_0.2-4     fs_1.6.3         
+[33] sass_0.4.8        cli_3.6.2         withr_3.0.0       magrittr_2.0.3   
+[37] ps_1.7.6          grid_4.3.2        digest_0.6.34     processx_3.8.3   
+[41] rstudioapi_0.15.0 lifecycle_1.0.4   vctrs_0.6.5       evaluate_0.23    
+[45] glue_1.7.0        farver_2.1.1      whisker_0.4.1     colorspace_2.1-0 
+[49] fansi_1.0.6       rmarkdown_2.25    httr_1.4.7        tools_4.3.2      
+[53] pkgconfig_2.0.3   htmltools_0.5.7  </code></pre>
+</div>
 </div>
 </div>
 
