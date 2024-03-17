@@ -7,7 +7,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Determining the effect of swimming *C. bombi* cell growth in the presence and absense of either BW or SF exine media.
+# Determining the effect of sunflower pollen exines on swimming *C. bombi* cell growth.
 
 ---
 
