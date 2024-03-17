@@ -400,7 +400,7 @@ aria-hidden="true"></span> </a>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2024-03-14
+<strong>Last updated:</strong> 2024-03-17
 </p>
 <p>
 <strong>Checks:</strong> <span
@@ -557,15 +557,15 @@ data/swimming.csv
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree5a91037dfc50bae44634dd058e2858add90489b1targetblank5a91037a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree52d35da7ab426dc153048de5367c921350920dd1targetblank52d35daa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/fstclair/learning_workflowr/tree/5a91037dfc50bae44634dd058e2858add90489b1" target="_blank">5a91037</a>
+<a href="https://github.com/fstclair/learning_workflowr/tree/52d35da7ab426dc153048de5367c921350920dd1" target="_blank">52d35da</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree5a91037dfc50bae44634dd058e2858add90489b1targetblank5a91037a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree52d35da7ab426dc153048de5367c921350920dd1targetblank52d35daa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -575,7 +575,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/fstclair/learning_workflowr/tree/5a91037dfc50bae44634dd058e2858add90489b1" target="_blank">5a91037</a>.
+<a href="https://github.com/fstclair/learning_workflowr/tree/52d35da7ab426dc153048de5367c921350920dd1" target="_blank">52d35da</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -593,9 +593,17 @@ Ignored files:
     Ignored:    .DS_Store
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Unstaged changes:
-    Modified:   homework_assignments/homework_2.22.R
+    Ignored:    analysis/aa_protocol.png
+    Ignored:    analysis/bw1.png
+    Ignored:    analysis/bw2.png
+    Ignored:    analysis/bw3.png
+    Ignored:    analysis/bw4.png
+    Ignored:    analysis/sample.png
+    Ignored:    analysis/sf1.png
+    Ignored:    analysis/sf2.png
+    Ignored:    analysis/sf3.png
+    Ignored:    analysis/sf4.png
+    Ignored:    analysis/wash_protocol.png
 
 </code></pre>
 <p>
@@ -641,6 +649,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/fstclair/learning_workflowr/blob/52d35da7ab426dc153048de5367c921350920dd1/analysis/third-analysis.Rmd" target="_blank">52d35da</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-03-17
+</td>
+<td>
+Publish about page and all pages
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/943cb56d0a5bd620ec524f0f3c35680bdb33ce22/docs/third-analysis.html" target="_blank">943cb56</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-03-14
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -802,11 +844,23 @@ Add my third analysis
 </div>
 </div>
 <div
-id="growth-curve-of-swimming-c.-bombi-in-the-presence-of-sf-or-bw-exines"
+id="determining-the-effect-of-swimming-c.-bombi-cell-growth-in-the-presence-and-absense-of-either-bw-or-sf-exine-media."
 class="section level1">
-<h1>Growth curve of swimming <em>C. bombi</em> in the presence of SF or
-BW exines</h1>
+<h1>Determining the effect of swimming <em>C. bombi</em> cell growth in
+the presence and absense of either BW or SF exine media.</h1>
 <hr />
+<div id="background" class="section level4">
+<h4>Background</h4>
+<p>Our collaborators have found that sunflower pollen reduces <em>C.
+bombi</em> infection inside the bumblebee through an unknown mechanism
+(<a
+href="https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.14320?casa_token=B8ZgWiM3CUUAAAAA%3Ap-wb7aqeD60s8_usDKbRK_kvtSCp3V5wFSpyuVN0kv8LKbRd97y5Wlrlcdfu8E9RxFtlc3vmKQXmxOk">Figueroa,
+L., 2023</a>).</p>
+<p>This experiment is an attempt to understand if <em>C. bombi</em>
+swimming cell growth is affected by the presence of SF exine media while
+using BW exine media and regular media as controls.</p>
+<hr />
+</div>
 <div id="description" class="section level4">
 <h4>Description</h4>
 <p>Quantifying swimming <em>C. bombi</em> cell growth in the presence of
@@ -824,71 +878,23 @@ reader and normalized to the plate using a standard dilution series from
 <div id="swimming-cell-growth-with-bw-or-sf-pollen-exines"
 class="section level3">
 <h3>Swimming cell growth with BW or SF pollen exines</h3>
-<pre class="r"><code># Libraries
-library(ggplot2)
-library(dplyr)</code></pre>
-<pre><code>
-Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>The following objects are masked from &#39;package:stats&#39;:
-
-    filter, lag</code></pre>
-<pre><code>The following objects are masked from &#39;package:base&#39;:
-
-    intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>#upload data
-sc &lt;- read.csv(&quot;~/Desktop/Coding/workflowr/learning_workflowr/data/swimming.csv&quot;) #set data name
-
-# Keep only 3 names
-sc1 &lt;- sc %&gt;% 
-  filter(treatment %in% c(&quot;Media&quot;, &quot;BW Media&quot;, &quot;SF Media&quot;)) 
-  
-#set colors
-cols &lt;- c(&quot;blue&quot;, &quot;coral&quot;, &quot;goldenrod1&quot;)
-
-# Plot
-sc1 %&gt;%
-  ggplot( aes(x=day, y=RLU, group=treatment, color=treatment)) +
-    geom_line() +
-  scale_y_log10() +
-  scale_fill_manual(values = cols)</code></pre>
-<p><img src="figure/third-analysis.Rmd/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-1-1">
-Past versions of unnamed-chunk-1-1.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-1-1" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/fstclair/learning_workflowr/blob/747116e5c7d124ccd7d931401ded598b9e841f28/docs/figure/third-analysis.Rmd/unnamed-chunk-1-1.png" target="_blank">747116e</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-14
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p><img src="figure/third-analysis.Rmd/swimming_growth-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Figure 1. Growth curve of swimming <em>C. bombi</em> WH Nluc cells
+without exines (blue), 320 mg/mL sunflower (SF) exines (yellow), and 320
+mg/mL buckwheat (BW) exines (orange) from day 0 to 3 measured on one
+plate and normalized using equation from each dilution series trendline.
+Note the difference in cell growth between the groups between the
+treatments, with the exine treatments showing more swimming cells. This
+could be explained by the exines settling at the bottom of the dish and
+not allowing as many cells to adhere, causing higher counts of swimming
+cells.</p>
+<p><br></p>
+<blockquote>
+<p>The data show no decrease in swimming cell growth when treated with
+either BW and SF exine media, leading to the conclusion that SF exines
+do not have an effect on swimming cell growth in <em>in vitro</em>
+models.</p>
+</blockquote>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
