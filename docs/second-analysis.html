@@ -597,15 +597,15 @@ data/aa_mr.csv
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree2ecad13e32c2ac5ada5b3b1dcc6bc87cf2d44084targetblank2ecad13a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree1062bcbb4a0da69f27d53cf74f8e341a10e7ccd3targetblank1062bcba">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/fstclair/learning_workflowr/tree/2ecad13e32c2ac5ada5b3b1dcc6bc87cf2d44084" target="_blank">2ecad13</a>
+<a href="https://github.com/fstclair/learning_workflowr/tree/1062bcbb4a0da69f27d53cf74f8e341a10e7ccd3" target="_blank">1062bcb</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree2ecad13e32c2ac5ada5b3b1dcc6bc87cf2d44084targetblank2ecad13a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomfstclairlearningworkflowrtree1062bcbb4a0da69f27d53cf74f8e341a10e7ccd3targetblank1062bcba"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -615,7 +615,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/fstclair/learning_workflowr/tree/2ecad13e32c2ac5ada5b3b1dcc6bc87cf2d44084" target="_blank">2ecad13</a>.
+<a href="https://github.com/fstclair/learning_workflowr/tree/1062bcbb4a0da69f27d53cf74f8e341a10e7ccd3" target="_blank">1062bcb</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -637,6 +637,8 @@ Ignored files:
 
 Unstaged changes:
     Modified:   analysis/_site.yml
+    Modified:   data/AA_08_WH_IR_R.csv
+    Modified:   data/AA_08_WH_IR_R.xlsx
     Modified:   homework_assignments/homework_2.22.R
 
 </code></pre>
@@ -683,6 +685,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/fstclair/learning_workflowr/blob/1062bcbb4a0da69f27d53cf74f8e341a10e7ccd3/analysis/second-analysis.Rmd" target="_blank">1062bcb</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-05-07
+</td>
+<td>
+Publish about page and all pages
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/de1c6fec6b4c07fc06f0169724a4ad2ff75b330c/docs/second-analysis.html" target="_blank">de1c6fe</a>
+</td>
+<td>
+fstclair
+</td>
+<td>
+2024-05-07
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -1208,14 +1244,21 @@ attachment assay</h1>
 <hr />
 <div id="description" class="section level4">
 <h4>Description</h4>
-<p>Quantifying the attachment efficiency of two culture-adapted cell
+<ul>
+<li><p>Our lab works with two strains of <em>C. bombi</em> from
+laboratory bumblebees.</p></li>
+<li><p>We want to quantify the attachment of two culture-adapted cell
 lines to explore infection capabilities.</p>
-<p>Number of single attached cells, individual rosettes, or merged
-rosettes counted over 72 hours.</p>
-<p>After 24 hours, dishes of cells were gently washed with 2 mL of PBS
-for clear imaging of 25 random fields for analysis.</p>
-<p>After imaging, dishes were gently washed with 2 mL of media and
-resuspended in 2 mL media for the next 24 hour incubation period.</p>
+<ul>
+<li>Number of single attached cells, individual rosettes, or merged
+rosettes counted over 72 hours.</li>
+</ul></li>
+<li><p>After 24 hours, dishes of cells were gently washed with 2 mL of
+PBS for clear imaging of 25 random fields for analysis.</p></li>
+<li><p>After imaging, dishes were gently washed with 2 mL of media and
+resuspended in 2 mL media for the next 24 hour incubation
+period.</p></li>
+</ul>
 <p><br></p>
 <hr />
 </div>
@@ -1281,6 +1324,37 @@ the signal to adhere, so they lift up and re-attach as quickly as they
 can (see Figure 4).</p>
 <div id="statistical-significance" class="section level4">
 <h4>Statistical significance</h4>
+<pre><code>$statistics
+   MSerror  Df     Mean       CV      MSD
+  41.25417 444 5.273333 121.8004 3.002063
+
+$parameters
+   test          name.t ntr StudentizedRange alpha
+  Tukey AA_08_WH_S_R$X1   6         4.047776  0.05
+
+$means
+     AA_08_WH_S_R$X2        std  r        se Min Max Q25 Q50  Q75
+OE24      8.62666667  8.4530074 75 0.7416574   0  54   3   6 13.5
+OE48      0.09333333  0.3358464 75 0.7416574   0   2   0   0  0.0
+OE72      0.93333333  2.6114785 75 0.7416574   0  15   0   0  0.0
+WH24      6.85333333  3.2536604 75 0.7416574   2  16   4   6  9.0
+WH48      0.45333333  0.6635965 75 0.7416574   0   3   0   0  1.0
+WH72     14.68000000 12.5742766 75 0.7416574   0  43   3  13 23.5
+
+$comparison
+NULL
+
+$groups
+     AA_08_WH_S_R$X2 groups
+WH72     14.68000000      a
+OE24      8.62666667      b
+WH24      6.85333333      b
+OE72      0.93333333      c
+WH48      0.45333333      c
+OE48      0.09333333      c
+
+attr(,&quot;class&quot;)
+[1] &quot;group&quot;</code></pre>
 <p><br></p>
 <hr />
 </div>
@@ -1344,6 +1418,37 @@ rosettes at 72 hours can be explained by the increase of WHA1 merged
 rosettes at 72 hours (see Figures 3 and 4).</p>
 <div id="statistical-significance-1" class="section level4">
 <h4>Statistical significance</h4>
+<pre><code>$statistics
+   MSerror  Df     Mean       CV       MSD
+  3.311471 444 2.053333 88.62394 0.8505432
+
+$parameters
+   test           name.t ntr StudentizedRange alpha
+  Tukey AA_08_WH_IR_R$X1   6         4.047776  0.05
+
+$means
+     AA_08_WH_IR_R$X2       std  r       se Min Max Q25 Q50 Q75
+OE24        0.1066667 0.3515730 75 0.210126   0   2   0   0   0
+OE48        0.4266667 0.7008361 75 0.210126   0   3   0   0   1
+OE72        0.7066667 0.8506489 75 0.210126   0   4   0   1   1
+WH24        3.1333333 2.3094011 75 0.210126   0  10   1   3   5
+WH48        5.5466667 3.1463979 75 0.210126   0  14   3   5   8
+WH72        2.4000000 1.8158462 75 0.210126   0   8   1   2   4
+
+$comparison
+NULL
+
+$groups
+     AA_08_WH_IR_R$X2 groups
+WH48        5.5466667      a
+WH24        3.1333333      b
+WH72        2.4000000      b
+OE72        0.7066667      c
+OE48        0.4266667      c
+OE24        0.1066667      c
+
+attr(,&quot;class&quot;)
+[1] &quot;group&quot;</code></pre>
 <p><br></p>
 <hr />
 </div>
@@ -1407,6 +1512,37 @@ cell line gradually increases in merged rosette counts over 72
 hours.</p>
 <div id="statistical-significance-2" class="section level4">
 <h4>Statistical significance</h4>
+<pre><code>$statistics
+    MSerror  Df      Mean       CV       MSD
+  0.9654054 444 0.4355556 225.5856 0.4592411
+
+$parameters
+   test           name.t ntr StudentizedRange alpha
+  Tukey AA_08_WH_MR_R$X1   6         4.047776  0.05
+
+$means
+     AA_08_WH_MR_R$X2       std  r        se Min Max Q25 Q50 Q75
+OE24       0.00000000 0.0000000 75 0.1134552   0   0   0   0   0
+OE48       0.00000000 0.0000000 75 0.1134552   0   0   0   0   0
+OE72       0.01333333 0.1154701 75 0.1134552   0   1   0   0   0
+WH24       0.01333333 0.1154701 75 0.1134552   0   1   0   0   0
+WH48       0.34666667 0.6258688 75 0.1134552   0   2   0   0   1
+WH72       2.24000000 2.3182006 75 0.1134552   0   9   0   1   4
+
+$comparison
+NULL
+
+$groups
+     AA_08_WH_MR_R$X2 groups
+WH72       2.24000000      a
+WH48       0.34666667      b
+WH24       0.01333333      b
+OE72       0.01333333      b
+OE24       0.00000000      b
+OE48       0.00000000      b
+
+attr(,&quot;class&quot;)
+[1] &quot;group&quot;</code></pre>
 <p><br></p>
 <hr />
 </div>
@@ -1436,11 +1572,16 @@ all future experiments.</p>
 href="https://doi.org/10.1101/2022.10.06.511084">Denecke, S., 2022</a>
 Created using <a href="biorender.com">biorender.com</a></p>
 <p><img src="assets/attachassay.png" /></p>
+<p><br></p>
+<hr />
+<hr />
 <div
 id="using-wh-strain-from-now-on-so-does-pollen-effect-swimming-cell-growth"
 class="section level2">
 <h2><a href="third-analysis.html">Using WH strain from now on, so does
 pollen effect swimming cell growth?</a></h2>
+<hr />
+<hr />
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -1468,35 +1609,39 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] viridis_0.6.5     viridisLite_0.4.2 hrbrthemes_0.8.7  forcats_1.0.0    
-[5] ggplot2_3.4.4     dplyr_1.1.4       tidyr_1.3.1       workflowr_1.7.1  
+ [1] agricolae_1.3-7   readr_2.1.5       viridis_0.6.5     viridisLite_0.4.2
+ [5] hrbrthemes_0.8.7  forcats_1.0.0     ggplot2_3.4.4     dplyr_1.1.4      
+ [9] tidyr_1.3.1       workflowr_1.7.1  
 
 loaded via a namespace (and not attached):
- [1] gtable_0.3.4            xfun_0.42               bslib_0.6.1            
- [4] processx_3.8.3          callr_3.7.3             vctrs_0.6.5            
- [7] tools_4.3.2             ps_1.7.6                generics_0.1.3         
-[10] curl_5.2.0              tibble_3.2.1            fansi_1.0.6            
-[13] highr_0.10              pkgconfig_2.0.3         lifecycle_1.0.4        
-[16] farver_2.1.1            compiler_4.3.2          stringr_1.5.1          
-[19] git2r_0.33.0            munsell_0.5.0           getPass_0.2-4          
-[22] httpuv_1.6.14           fontquiver_0.2.1        fontLiberation_0.1.0   
-[25] htmltools_0.5.7         sass_0.4.8              yaml_2.3.8             
-[28] Rttf2pt1_1.3.12         later_1.3.2             pillar_1.9.0           
-[31] crayon_1.5.2            jquerylib_0.1.4         whisker_0.4.1          
-[34] extrafontdb_1.0         ellipsis_0.3.2          gfonts_0.2.0           
-[37] cachem_1.0.8            mime_0.12               fontBitstreamVera_0.1.1
-[40] tidyselect_1.2.0        digest_0.6.34           stringi_1.8.3          
-[43] purrr_1.0.2             labeling_0.4.3          extrafont_0.19         
-[46] rprojroot_2.0.4         fastmap_1.1.1           grid_4.3.2             
-[49] colorspace_2.1-0        cli_3.6.2               magrittr_2.0.3         
-[52] crul_1.4.0              utf8_1.2.4              withr_3.0.0            
-[55] gdtools_0.3.6           scales_1.3.0            promises_1.2.1         
-[58] rmarkdown_2.25          httr_1.4.7              gridExtra_2.3          
-[61] shiny_1.8.0             evaluate_0.23           knitr_1.45             
-[64] rlang_1.1.3             Rcpp_1.0.12             xtable_1.8-4           
-[67] glue_1.7.0              httpcode_0.3.0          rstudioapi_0.15.0      
-[70] jsonlite_1.8.8          R6_2.5.1                systemfonts_1.0.5      
-[73] fs_1.6.3               </code></pre>
+ [1] tidyselect_1.2.0        farver_2.1.1            fastmap_1.1.1          
+ [4] fontquiver_0.2.1        promises_1.2.1          digest_0.6.34          
+ [7] mime_0.12               lifecycle_1.0.4         cluster_2.1.6          
+[10] gfonts_0.2.0            ellipsis_0.3.2          processx_3.8.3         
+[13] magrittr_2.0.3          compiler_4.3.2          rlang_1.1.3            
+[16] sass_0.4.8              tools_4.3.2             utf8_1.2.4             
+[19] yaml_2.3.8              knitr_1.45              labeling_0.4.3         
+[22] bit_4.0.5               curl_5.2.0              httpcode_0.3.0         
+[25] withr_3.0.0             purrr_1.0.2             grid_4.3.2             
+[28] fansi_1.0.6             git2r_0.33.0            AlgDesign_1.2.1        
+[31] gdtools_0.3.6           xtable_1.8-4            colorspace_2.1-0       
+[34] extrafontdb_1.0         scales_1.3.0            MASS_7.3-60.0.1        
+[37] crul_1.4.0              cli_3.6.2               rmarkdown_2.25         
+[40] crayon_1.5.2            generics_0.1.3          rstudioapi_0.15.0      
+[43] httr_1.4.7              tzdb_0.4.0              cachem_1.0.8           
+[46] stringr_1.5.1           parallel_4.3.2          vctrs_0.6.5            
+[49] jsonlite_1.8.8          fontBitstreamVera_0.1.1 callr_3.7.3            
+[52] hms_1.1.3               bit64_4.0.5             systemfonts_1.0.5      
+[55] jquerylib_0.1.4         glue_1.7.0              ps_1.7.6               
+[58] stringi_1.8.3           gtable_0.3.4            later_1.3.2            
+[61] extrafont_0.19          munsell_0.5.0           tibble_3.2.1           
+[64] pillar_1.9.0            htmltools_0.5.7         R6_2.5.1               
+[67] rprojroot_2.0.4         vroom_1.6.5             evaluate_0.23          
+[70] shiny_1.8.0             lattice_0.22-5          highr_0.10             
+[73] fontLiberation_0.1.0    httpuv_1.6.14           bslib_0.6.1            
+[76] Rcpp_1.0.12             gridExtra_2.3           nlme_3.1-164           
+[79] Rttf2pt1_1.3.12         whisker_0.4.1           xfun_0.42              
+[82] fs_1.6.3                getPass_0.2-4           pkgconfig_2.0.3        </code></pre>
 </div>
 </div>
 </div>
