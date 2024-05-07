@@ -73,7 +73,7 @@ df %>%
 
 Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 4).
 
-#### Statistical significance
+#### Statistical significance two-way ANOVA with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 #ANOVA test
@@ -157,7 +157,7 @@ df1 %>%
 Figure 2.  Grouped violin plot of 3 replicates of individual rosettes per field counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show in increase of WHA1 rosettes in all three time points. A decrease of WHA1 individual rosettes at 72 hours can be explained by the increase of WHA1 merged rosettes at 72 hours (see Figures 3 and 4).
 
 
-#### Statistical significance
+#### Statistical significance two-way ANOVA with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
@@ -240,7 +240,7 @@ df2 %>%
 Figure 3.  Grouped violin plot of 3 replicates of merged rosettes per field counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show that while the 08.076 cell line remains a consistent low amount of merged rosettes, the WHA1 cell line gradually increases in merged rosette counts over 72 hours.
 
 
-#### Statistical significance
+#### Statistical significance two-way ANOVA  with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
@@ -275,7 +275,7 @@ HSD.MR
 
 # Sample images
 
-![](assets/sample.png)
+![](assets/sample.png){ width=500px }
 
 Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48, and 72 hours. A clear difference in attachment efficiency can be seen between the two cell lines, with a dramatic increase in attached cells in the WH line.
 

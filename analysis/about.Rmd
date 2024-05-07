@@ -16,19 +16,7 @@ editor_options:
 
 ---
 
-#### Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University.
-
 <br>
-
-![](assets/labpic4.png){ width=200px } ![](assets/1labpic.png){ width=200px } 
-
-![](assets/labpic2.png){ width=200px } ![](assets/33labpic.png){ width=200px } 
-
-Pove Lab <3
-
-<br>
-
----
 
 ### Methods:
 
@@ -41,6 +29,23 @@ Pove Lab <3
 4. Attachment assay on the initial plating to observe and quantify *in vitro* attachment in the presence of pollen exines.
 
 5. Wash attachment assay after 48 hours of attachment to observe and quantify how *in vitro* attachment is affected by the presence of pollen exines.
+
+
+---
+
+<br>
+
+#### Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University.
+
+<br>
+
+![](assets/labpic4.png){ width=400px } ![](assets/1labpic.png){ width=400px } 
+
+![](assets/labpic2.png){ width=400px } ![](assets/33labpic.png){ width=400px } 
+
+Pove Lab <3
+
+<br>
 
 
 ---

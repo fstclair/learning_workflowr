@@ -43,7 +43,7 @@ This experiment is an attempt to understand if *C. bombi* swimming cell growth i
 - *C. bombi* was transfected with an episomal construct containing Nanoluciferase (Nluc), a constitutively expressed Nluc reporter, and a Hygromycin cassette for selection.
 
 
-![<span style="font-size: smaller;">Custom NanoLuciferase plasmid from Dr. Shane Denecke (Dr. Michael Povelones Lab)</span>](assets/plasmid.png){ width=200px }
+![<span style="font-size: smaller;">Custom NanoLuciferase plasmid from Dr. Shane Denecke (Dr. Michael Povelones Lab)</span>](assets/plasmid.png){ width=300px }
 
 
 - Growth was measured in Relative Light Units (RLU) using a plate reader and normalized to the plate using a standard dilution series from 1E1 to 1E6 cells/well to capture cell density in cells/mL.
