@@ -14,13 +14,15 @@ editor_options:
 
 #### Description
 
-Quantifying the attachment of *C. bombi* in the presence of two different pollen exines (outer shell of pollen): sunflower and buckwheat.
+- Exploring initial attachment capabilities of *C. bombi* grown in exine medias.
 
-Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
+- We quantified the attachment of *C. bombi* in the presence of two different pollen exines (outer shell of pollen): sunflower and buckwheat.
 
-After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for swimming-cell clear image analysis. 
+  - Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
 
-After imaging, dishes were gently washed with 2 mL of respective pollen exine media and resuspended in 2 mL exine media for the next 24 hour incubation period.
+- After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for swimming-cell clear image analysis. 
+
+- After imaging, dishes were gently washed with 2 mL of respective pollen exine media and resuspended in 2 mL exine media for the next 24 hour incubation period.
 
 <br>
 
@@ -71,6 +73,37 @@ df %>%
 
 Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference in initial single cell attachment at 24 hours. Single cell attachment at 72 hours most likely due to cell division in the center of large rosettes finding a spot to adhere close by.
 
+
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
+#ANOVA test
+?aov
+
+## single attached cells ##
+#import dataset AA_BWSF_S_R.csv
+
+library(readr)
+AA_BWSF_S_R <- read_csv("data/AA_BWSF_S_R.csv", 
+    col_names = FALSE)
+
+S <- aov(AA_BWSF_S_R$X2~AA_BWSF_S_R$X1)
+summary(S)
+#run shapiro test on residuals
+res <- residuals(S)
+res
+shapiro.test(res)
+#satisfied - W = 0.92978, p-value = 1.083e-13
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+#Tukey test
+# install.packages("agricolae")
+library(agricolae)
+HSD.S <- HSD.test(S, "AA_BWSF_S_R$X1")
+HSD.S
+```
 
 <br>
 
@@ -123,6 +156,40 @@ df1 %>%
 
 Figure 2.  Violin plot of 3 replicates of individual rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference number of rosettes at each time point. An unexpected sharp drop in number of rosettes in sunflower exine media samples lead to the discussion of the exine media wash steps before next incubation period abrading attached cells.
 
+
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
+
+## individual rosettes ##
+#import dataset AA_BWSF_IR_R.csv
+
+library(readr)
+AA_BWSF_IR_R <- read_csv("data/AA_BWSF_IR_R.csv", 
+    col_names = FALSE)
+
+IR <- aov(AA_BWSF_IR_R$X2~AA_BWSF_IR_R$X1)
+summary(IR)
+#run shapiro test on residuals
+res <- residuals(IR)
+res
+shapiro.test(res)
+#satisfied - W = 0.94488, p-value = 6.942e-12
+
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+
+#Tukey test
+library(agricolae)
+?HSD.test
+HSD.IR <- HSD.test(IR, "AA_BWSF_IR_R$X1")
+HSD.IR
+
+```
+
+
 <br>
 
 ---
@@ -172,6 +239,42 @@ df2 %>%
 
 Figure 3.  Violin plot of 3 replicates of merged rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show similar results to the initial attachment assay.
 
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
+
+# merged rosettes ##
+#import dataset AA_BWSF_MR_R.csv
+
+library(readr)
+AA_BWSF_MR_R <- read_csv("data/AA_BWSF_MR_R.csv", 
+    col_names = FALSE)
+
+MR <- aov(AA_BWSF_MR_R$X2~AA_BWSF_MR_R$X1)
+summary(MR)
+#run shapiro test on residuals
+res <- residuals(MR)
+res
+shapiro.test(res)
+#satisfied - W = 0.71116, p-value < 2.2e-16
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+
+#Tukey test
+HSD.MR <- HSD.test(MR, "AA_BWSF_MR_R$X1")
+HSD.MR
+
+```
+
+
+---
+
+<br>
+
+
+> The data show cells grown in sunflower exine media have significantly less initial attachment. The number of rosettes in sunflower exine media were significantly reduced after 48 and 72 hours. Next, we want to investigate how established attachment may be affected by wash steps with exine medias.
 
 
 <br>
@@ -180,7 +283,21 @@ Figure 3.  Violin plot of 3 replicates of merged rosettes per field in cell line
 
 # Protocol
 
+Created with [biorender.com](biorender.com)
+
 ![](assets/exattachassay.png)
+
+<br>
+
+---
+
+---
+
+## [Sunflower pollen decreases initial attachment, do these wash steps affect already attached cells?](first-analysis.html)
+
+---
+
+---
 
 
 

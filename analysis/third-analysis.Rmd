@@ -15,6 +15,22 @@ editor_options:
 
 Our collaborators have found that sunflower pollen reduces *C. bombi* infection inside the bumblebee through an unknown mechanism ([Figueroa, L., 2023](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.14320?casa_token=B8ZgWiM3CUUAAAAA%3Ap-wb7aqeD60s8_usDKbRK_kvtSCp3V5wFSpyuVN0kv8LKbRd97y5Wlrlcdfu8E9RxFtlc3vmKQXmxOk)). 
 
+The outer shell of pollen is known as the pollen **exine**. In this article, sunflower pollen exines show to reduce parasite infection just as effectively as whole pollen grains. The methanol method of extraction for pollen exines allows for sterility and will be used in this project.
+
+Sunflower pollen is low in protein and has an outer shell full of spines. Buckwheat pollen has similar protein levels to sunflower pollen, but has a round outer shell, providing a fantastic control for studying the physical effects of pollen exines on parasite activity *in vitro*. 
+
+<br>
+
+![<span style="font-size: smaller;">Sunflower (Mundargi, 2015)</span>](assets/sfpollen.png){ width=200px } 
+
+
+
+![<span style="font-size: smaller;">Buckwheat (Maes, 2023)</span>](assets/bwpollen.jpg){ width=200px }
+
+
+
+<br>
+
 This experiment is an attempt to understand if *C. bombi* swimming cell growth is affected by the presence of SF exine media while using BW exine media and regular media as controls.
 
 
@@ -25,12 +41,6 @@ This experiment is an attempt to understand if *C. bombi* swimming cell growth i
 - Quantifying swimming *C. bombi* cell growth in the presence of BW or SF pollen exines over 72 hours to explore pollen effects on the growth of swimming cells.
 
 - *C. bombi* was transfected with an episomal construct containing Nanoluciferase (Nluc), a constitutively expressed Nluc reporter, and a Hygromycin cassette for selection.
-
-
-
-<div style="text-align: center;">
-    ![<span style="font-size: smaller;">Custom NanoLuciferase plasmid from Dr. Shane Denecke (Dr. Michael Povelones Lab)</span>](assets/picture.png){ width=200px }
-</div>
 
 
 ![<span style="font-size: smaller;">Custom NanoLuciferase plasmid from Dr. Shane Denecke (Dr. Michael Povelones Lab)</span>](assets/plasmid.png){ width=200px }
@@ -58,9 +68,12 @@ sc <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/swimming.csv"
 # Keep only 3 names
 sc1 <- sc %>% 
   filter(treatment %in% c("Media", "BW Media", "SF Media")) 
-  
+
+#format treatment groups in the legend with levels
+sc1$treatment <- factor(sc1$treatment, levels = c("Media", "BW Media", "SF Media"))  
+
 #set colors
-cols <- c("coral", "blue", "goldenrod1")
+cols <- c("blue", "coral", "goldenrod1")
 
 # Plot
 sc1 %>%
@@ -78,6 +91,7 @@ sc1 %>%
 
 Figure 1. Growth curve of swimming *C. bombi* WH Nluc cells without exines (blue), 320 mg/mL sunflower (SF) exines (yellow), and 320 mg/mL buckwheat (BW) exines (orange) from day 0 to 3 measured on one plate and normalized using equation from each dilution series trendline. Note the difference in cell growth between the groups between the treatments, with the exine treatments showing more swimming cells. This could be explained by the exines settling at the bottom of the dish and not allowing as many cells to adhere, causing higher counts of swimming cells. 
 
+---
 
 <br>
 
@@ -85,13 +99,40 @@ Figure 1. Growth curve of swimming *C. bombi* WH Nluc cells without exines (blue
 > The data show no decrease in swimming cell growth when treated with either BW and SF exine media, leading to the conclusion that SF exines do not have an effect on swimming cell growth in *in vitro* models.
 
 
+<br>
+
+---
+
+Cells growing in exine media have greater cell density than cells growing in regular media. Cells were grown in 320 mg/ml of exine media, which was a very high concentration. Many of the exines settled to the bottom of the plate, possibly inhibiting attachment for cells grown in exine media. 
+
+<br>
+
+![<span style="font-size: smaller;"></span>](assets/exinemedia.png){ width=500px }
+<br>
+
+To account for this in future experiments, using sterile beads at the bottom of the plate for all three treatment groups will restrict attachment for each group, controlling for this factor.
+
+<br>
+
+![<span style="font-size: smaller;"></span>](assets/beads.png){ width=500px }
+
+<br>
+
+Images created with [biorender.com](biorender.com)
+
+<br>
+
+---
+
+---
 
 
-
-[Swimming cell growth is not affected by SF exines, is initial attachment affected?](fourth-analysis.html)
-
+## [Swimming cell growth is not affected by SF exines, is initial attachment affected?](fourth-analysis.html)
 
 
+---
+
+---
 
 
 

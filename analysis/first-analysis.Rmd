@@ -13,10 +13,13 @@ editor_options:
 
 #### Description
 
+- Quantifying rosette condition after consecutive exine media washes.
 
-Number of intact or damaged rosettes counted pre-wash (labeled START) and after 1-4 washes of buckwheat (BW) or sunflower (SF) exine media.
+- Number of intact or damaged rosettes counted pre-wash (labeled START) and after 1-4 washes of buckwheat (BW) or sunflower (SF) exine media.
 
-Exine media wash was followed by a gentle wash of PBS for clear imaging of 25 random fields for analysis. 
+- Exine media wash was followed by a gentle wash of PBS for clear imaging of 25 random fields for analysis. 
+
+- One replicate
 
 <br>
 
@@ -60,6 +63,8 @@ ggplot(df, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
   theme_light()
 
 ```
+
+Figure 1. Grouped boxplot of intact rosettes for one replicate of wash attachment assay with two exine medias: buckwheat (orange) and sunflower (yellow). Both groups start at a baseline before any exine wash, followed by 4 consecutive washes with 25 random fields at each wash and quantified the number of intact rosettes per field. Intact rosettes washed with sf exine media showed only a couple left per field after wash 2.
 
 <br>
 
@@ -108,12 +113,13 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 ```
 
+Figure 2. Grouped boxplot of damaged rosettes for one replicate of wash attachment assay with two exine medias: buckwheat (orange) and sunflower (yellow). Both groups start at a baseline before any exine wash, followed by 4 consecutive washes with 25 random fields at each wash and quantified the number of intact rosettes per field. The amount of damaged rosettes in buckwheat exine washes remain low, while damaged rosette numbers increase in sunflower exine washes after wash 1.
 
 <br>
 
 ---
 
-> *C. bombi* rosettes washed with SF exine media experience more damaged rosettes than when washed with BW exine media. 
+> *C. bombi* rosettes washed with SF exine media experience more damaged rosettes than when washed with BW exine media. More replicates and further experimentation can provide significance for these results.
 
 ---
 
@@ -126,20 +132,27 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 ### BW
 
+<br>
 
-![](assets/bw1.png) ![](assets/bw2.png)
 
-![](assets/bw3.png) ![](assets/bw4.png)
+![](assets/bw1.png){ width=200px } ![](assets/bw2.png){ width=200px }
+
+![](assets/bw3.png){ width=200px } ![](assets/bw4.png){ width=200px }
+
+Intact rosettes.
+
+<br>
 
 
 ### SF
 
+<br>
 
-![](assets/sf1.png) ![](assets/sf2.png)
+![](assets/sf1.png){ width=200px } ![](assets/sf2.png){ width=200px }
 
-![](assets/sf3.png) ![](assets/sf4.png)
+![](assets/sf3.png){ width=200px } ![](assets/sf4.png){ width=200px }
 
-
+Damaged rosettes.
 
 <br>
 

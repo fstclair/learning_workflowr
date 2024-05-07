@@ -13,13 +13,15 @@ editor_options:
 
 #### Description
 
-Quantifying the attachment efficiency of two culture-adapted cell lines to explore infection capabilities.
+- Our lab works with two strains of *C. bombi* from laboratory bumblebees.
 
-Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
+- We want to quantify the attachment of two culture-adapted cell lines to explore infection capabilities.
 
-After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for analysis. 
+  - Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
 
-After imaging, dishes were gently washed with 2 mL of media and resuspended in 2 mL media for the next 24 hour incubation period.
+- After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for analysis. 
+
+- After imaging, dishes were gently washed with 2 mL of media and resuspended in 2 mL media for the next 24 hour incubation period.
 
 <br>
 
@@ -73,23 +75,33 @@ Figure 1. Violin plot of 3 replicates of individually counted cells per field in
 
 #### Statistical significance
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 #ANOVA test
 ?aov
 
 ## single attached cells ##
 #import dataset AA_08_WH_S_R.csv
+library(readr)
+AA_08_WH_S_R <- read_csv("data/AA_08_WH_S_R.csv", 
+    col_names = FALSE)
 
-# S <- aov(AA_08_WH_S_R$V2~AA_08_WH_S_R$V1)
-# summary(S)
-# #run shapiro test on residuals
-# res <- residuals(S)
-# res
-# shapiro.test(res)
-# #satisfied - W = 0.79347, p-value < 2.2e-16
-# #Tukey test
-# HSD.S <- HSD.test(S, "AA_08_WH_S_R$V1")
-# HSD.S
+S <- aov(AA_08_WH_S_R$X2~AA_08_WH_S_R$X1)
+summary(S)
+#run shapiro test on residuals
+res <- residuals(S)
+res
+shapiro.test(res)
+#satisfied - W = 0.79347, p-value < 2.2e-16
+
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+#Tukey test
+# install.packages("agricolae")
+library(agricolae)
+HSD.S <- HSD.test(S, "AA_08_WH_S_R$X1")
+HSD.S
 ```
 
 
@@ -147,28 +159,35 @@ Figure 2.  Grouped violin plot of 3 replicates of individual rosettes per field 
 
 #### Statistical significance
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
 ## individual rosettes ##
 # #import dataset AA_08_WH_IR_R.csv
-# 
-# AA <- aov(AA_08_WH_IR_R$V2~AA_08_WH_IR_R$V1)
-# summary(AA)
-# #run shapiro test on residuals
-# res <- residuals(AA)
-# res
-# shapiro.test(res)
-# #satisfied - W = 0.93755, p-value = 8.451e-13
-# #Tukey test
-# install.packages("agricolae")
-# library(agricolae)
-# ?HSD.test
-# HSD.AA <- HSD.test(AA, "AA_08_WH_IR_R$V1")
-# HSD.AA
 
+library(readr)
+AA_08_WH_IR_R <- read_csv("data/AA_08_WH_IR_R.csv", 
+    col_names = FALSE)
+
+
+
+AA <- aov(AA_08_WH_IR_R$X2~AA_08_WH_IR_R$X1)
+summary(AA)
+#run shapiro test on residuals
+res <- residuals(AA)
+res
+shapiro.test(res)
+#satisfied - W = 0.93755, p-value = 8.451e-13
 
 ```
 
+```{r echo=FALSE, warning=FALSE}
+
+#Tukey test
+library(agricolae)
+HSD.AA <- HSD.test(AA, "AA_08_WH_IR_R$X1")
+HSD.AA
+
+```
 
 <br>
 
@@ -223,24 +242,32 @@ Figure 3.  Grouped violin plot of 3 replicates of merged rosettes per field coun
 
 #### Statistical significance
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
-## merged rosettes ##
-# #import dataset AA_08_WH_MR_R.csv
-# 
-# MR <- aov(AA_08_WH_MR_R$V2~AA_08_WH_MR_R$V1)
-# summary(MR)
-# #run shapiro test on residuals
-# res <- residuals(MR)
-# res
-# shapiro.test(res)
-# #satisfied - W = 0.6166, p-value < 2.2e-16
-# #Tukey test
-# HSD.MR <- HSD.test(MR, "AA_08_WH_MR_R$V1")
-# HSD.MR
+# merged rosettes ##
+#import dataset AA_08_WH_MR_R.csv
+
+library(readr)
+AA_08_WH_MR_R <- read_csv("data/AA_08_WH_MR_R.csv", 
+    col_names = FALSE)
+
+MR <- aov(AA_08_WH_MR_R$X2~AA_08_WH_MR_R$X1)
+summary(MR)
+#run shapiro test on residuals
+res <- residuals(MR)
+res
+shapiro.test(res)
+#satisfied - W = 0.6166, p-value < 2.2e-16
 
 ```
 
+```{r echo=FALSE, warning=FALSE}
+
+#Tukey test
+HSD.MR <- HSD.test(MR, "AA_08_WH_MR_R$X1")
+HSD.MR
+
+```
 
 <br>
 
@@ -270,9 +297,16 @@ Created using [biorender.com](biorender.com)
 
 ![](assets/attachassay.png)
 
+<br>
+
+---
+
+---
 
 ## [Using WH strain from now on, so does pollen effect swimming cell growth?](third-analysis.html)
 
+---
 
+---
 
 
