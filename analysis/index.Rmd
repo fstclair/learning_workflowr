@@ -18,11 +18,17 @@ My name is Faith St. Clair -- I am a graduate student and research assistant at 
 
 I research the effects of different pollen diets on attachment and infection of a parasite of bumblebees, *C. bombi*, and their impact on pollinator health and ecosystem status.
 
+
 ---
+
+
+<button type="button" class="btn btn-primary btn-lg">Guide me through the website!</about.html>
 
 ## [Guide me through the website!](about.html)
 
+
 ---
+
 
 
 

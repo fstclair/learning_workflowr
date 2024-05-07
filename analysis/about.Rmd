@@ -44,7 +44,12 @@ editor_options:
 
 #### This material is based upon work supported by the National Science Foundation under grant number 2128223.
 
+
 ---
 
+
 ## [Take me to the start of your research project!](second-analysis.html)
+
+
+---
 
