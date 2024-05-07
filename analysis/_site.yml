@@ -31,8 +31,7 @@ navbar:
     href: https://github.com/fstclair/learning_workflowr
 output:
   workflowr::wflow_html:
-    css: "custom.css"
-    toc: yes
-    toc_float: yes
-    theme: darkly
+    toc: true
+    toc_float: true
+    theme: cosmo
     highlight: textmate
