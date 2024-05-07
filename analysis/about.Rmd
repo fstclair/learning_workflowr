@@ -16,21 +16,20 @@ editor_options:
 
 ### Methods:
 
-1. Growth curves to observe and quantify *in vitro* swimming cell growth.
+1. Attachment assay to observe and quantify *in vitro* attachment between two cell lines.
 
-2. Attachment assay to observe and quantify *in vitro* attachment.
+2. Transfect an episomal construct containing Nanoluciferase and a Hygromycin cassette (for selection) for easier and accurate quantitation in the presence of pollen.
 
-3. Transfect an episomal construct containing Nanoluciferase and a Hygromycin cassette for better quantitation in the presence of pollen.
+3. Growth curve by plate reader to quantify *in vitro* swimming cell growth in the presence of pollen exines.
 
-4. Growth curve by plate reader to quantify *in vitro* swimming cell growth in the presence of pollen exines.
+4. Attachment assay on the initial plating to observe and quantify *in vitro* attachment in the presence of pollen exines.
 
-5. Attachment assay on the initial plating to observe and quantify *in vitro* attachment in the presence of pollen exines.
+5. Wash attachment assay after 48 hours of attachment to observe and quantify how *in vitro* attachment is affected by the presence of pollen exines.
 
-6. Wash attachment assay after 48 hours of attachment to observe and quantify how *in vitro* attachment is affected by the presence of pollen exines.
-
-7. Proteomic analysis to observe different protein expression in swimming and adhered cells
 
 ---
+
+### [Presentations](presentations.html)
 
 ### Publications (in progress)
 

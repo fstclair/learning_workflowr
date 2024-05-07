@@ -56,14 +56,15 @@ cols <- c("coral", "blue", "goldenrod1")
 sc1 %>%
   ggplot( aes(x=day, y=RLU, group=treatment, color=treatment)) +
     geom_line(lwd=1) +
+    geom_point() +
     labs(x = "Day",
        y = "Cell Density (cells/mL)",
        color = "Treatment") + 
-  scale_y_log10() +
+  scale_y_log10(breaks = c(3E6, 1E7, 3E7, 1E8, 3E8), labels = c("3e6", "1e7", "3e7", "1e8", "3e8")) +
   scale_color_manual(values = cols) +
-  theme_classic()
+  theme_light()
 
-```
+`````````
 
 Figure 1. Growth curve of swimming *C. bombi* WH Nluc cells without exines (blue), 320 mg/mL sunflower (SF) exines (yellow), and 320 mg/mL buckwheat (BW) exines (orange) from day 0 to 3 measured on one plate and normalized using equation from each dilution series trendline. Note the difference in cell growth between the groups between the treatments, with the exine treatments showing more swimming cells. This could be explained by the exines settling at the bottom of the dish and not allowing as many cells to adhere, causing higher counts of swimming cells. 
 

@@ -1,0 +1,20 @@
+---
+title: "Presentations"
+author: "fstclair"
+date: "2024-05-06"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+
+
+### Cellular Biology of Eukaryotic Pathogens (CBEP) - October 2022
+#### Clemson University Epic at Clemson Outdoor Laboratory
+
+#### "Exploring the Genetic Toolkit of *Crithidia bombi*" with Blyssalyn Bieber
+
+![](assets/cbep.png)
+
+
+

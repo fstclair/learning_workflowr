@@ -54,11 +54,10 @@ colors <- c("coral", "goldenrod1")
 ggplot(df, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
   geom_boxplot() +
   labs(x = "Wash number",
-       y = "Number of intact rosettes",
+       y = "Number of intact rosettes per field",
        fill = "Treatment") +
   scale_fill_manual(values = colors) +
-  theme_classic()
-
+  theme_light()
 
 ```
 
@@ -79,9 +78,9 @@ ggplot(df, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 df1 <- read.csv("~/Desktop/Coding/r_examples/practice_plots/sfbw_w_aa_dr.csv") #set data name
 
-library(tidyr)
-library(dplyr)
-library(ggplot2)
+# library(tidyr)
+# library(dplyr)
+# library(ggplot2)
 
 
 # grouped boxplot
@@ -101,10 +100,10 @@ colors <- c("coral", "goldenrod1")
 ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
   geom_boxplot() +
   labs(x = "Wash number",
-       y = "Number of intact rosettes",
+       y = "Number of damaged rosettes per field",
        fill = "Treatment") +
   scale_fill_manual(values = colors) +
-  theme_classic()
+  theme_light()
 
 
 ```
@@ -128,17 +127,17 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 ### BW
 
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/docs/bw1.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/docs/bw2.png)
+![](assets/bw1.png) ![](assets/bw2.png)
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/docs/bw3.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/docs/bw4.png)
+![](assets/bw3.png) ![](assets/bw4.png)
 
 
 ### SF
 
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/docs/sf1.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/docs/sf2.png)
+![](assets/sf1.png) ![](assets/sf2.png)
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/docs/sf3.png) ![](~/Desktop/Coding/workflowr/learning_workflowr/docs/sf4.png)
+![](assets/sf3.png) ![](assets/sf4.png)
 
 
 
@@ -149,9 +148,9 @@ ggplot(df1, aes(x = WASH, y = ROSETTES, fill=TREATMENT)) +
 
 # Protocol
 
-Created using [biorender](https://www.biorender.com/)
+Created using [biorender.com](https://www.biorender.com/)
 
-![](~/Desktop/Coding/workflowr/learning_workflowr/docs/wash_protocol.png)
+![](assets/exwashattachassay.png)
 
 
 
