@@ -20,28 +20,9 @@ I research the effects of different pollen diets on attachment and infection of 
 
 ---
 
-### About my project
-
-- Learn about the steps of [my project](about.html), publications, the lab, and funding information.
+## [Guide me through the website!](about.html)
 
 ---
 
-### Examining the effects of different pollen diets on swimming cells
-
-- [Line graph](third-analysis.hmtl) showing different pollen diets do not affect swimming *C. bombi* cells.
-
----
-
-### Examining attachment effiencies of two culture-adapted cell lines
-
-- [Violin plots](second-analysis.html) of cell lines 08.076 and WHA1 attachment assay.
-
----
-
-### Examining the effects of different pollen washes on adhered cells
-
-- [Box plots](first-analysis.html) of BW and SF wash attachment assay -- intact and damaged rosettes. 
-
----
 
 

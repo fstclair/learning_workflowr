@@ -80,16 +80,16 @@ Figure 1. Violin plot of 3 replicates of individually counted cells per field in
 ## single attached cells ##
 #import dataset AA_08_WH_S_R.csv
 
-S <- aov(AA_08_WH_S_R$V2~AA_08_WH_S_R$V1)
-summary(S)
-#run shapiro test on residuals
-res <- residuals(S)
-res
-shapiro.test(res)
-#satisfied - W = 0.79347, p-value < 2.2e-16
-#Tukey test
-HSD.S <- HSD.test(S, "AA_08_WH_S_R$V1")
-HSD.S
+# S <- aov(AA_08_WH_S_R$V2~AA_08_WH_S_R$V1)
+# summary(S)
+# #run shapiro test on residuals
+# res <- residuals(S)
+# res
+# shapiro.test(res)
+# #satisfied - W = 0.79347, p-value < 2.2e-16
+# #Tukey test
+# HSD.S <- HSD.test(S, "AA_08_WH_S_R$V1")
+# HSD.S
 ```
 
 
@@ -150,21 +150,21 @@ Figure 2.  Grouped violin plot of 3 replicates of individual rosettes per field 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 ## individual rosettes ##
-#import dataset AA_08_WH_IR_R.csv
-
-AA <- aov(AA_08_WH_IR_R$V2~AA_08_WH_IR_R$V1)
-summary(AA)
-#run shapiro test on residuals
-res <- residuals(AA)
-res
-shapiro.test(res)
-#satisfied - W = 0.93755, p-value = 8.451e-13
-#Tukey test
-install.packages("agricolae")
-library(agricolae)
-?HSD.test
-HSD.AA <- HSD.test(AA, "AA_08_WH_IR_R$V1")
-HSD.AA
+# #import dataset AA_08_WH_IR_R.csv
+# 
+# AA <- aov(AA_08_WH_IR_R$V2~AA_08_WH_IR_R$V1)
+# summary(AA)
+# #run shapiro test on residuals
+# res <- residuals(AA)
+# res
+# shapiro.test(res)
+# #satisfied - W = 0.93755, p-value = 8.451e-13
+# #Tukey test
+# install.packages("agricolae")
+# library(agricolae)
+# ?HSD.test
+# HSD.AA <- HSD.test(AA, "AA_08_WH_IR_R$V1")
+# HSD.AA
 
 
 ```
@@ -226,18 +226,18 @@ Figure 3.  Grouped violin plot of 3 replicates of merged rosettes per field coun
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 ## merged rosettes ##
-#import dataset AA_08_WH_MR_R.csv
-
-MR <- aov(AA_08_WH_MR_R$V2~AA_08_WH_MR_R$V1)
-summary(MR)
-#run shapiro test on residuals
-res <- residuals(MR)
-res
-shapiro.test(res)
-#satisfied - W = 0.6166, p-value < 2.2e-16
-#Tukey test
-HSD.MR <- HSD.test(MR, "AA_08_WH_MR_R$V1")
-HSD.MR
+# #import dataset AA_08_WH_MR_R.csv
+# 
+# MR <- aov(AA_08_WH_MR_R$V2~AA_08_WH_MR_R$V1)
+# summary(MR)
+# #run shapiro test on residuals
+# res <- residuals(MR)
+# res
+# shapiro.test(res)
+# #satisfied - W = 0.6166, p-value < 2.2e-16
+# #Tukey test
+# HSD.MR <- HSD.test(MR, "AA_08_WH_MR_R$V1")
+# HSD.MR
 
 ```
 
@@ -271,7 +271,7 @@ Created using [biorender.com](biorender.com)
 ![](assets/attachassay.png)
 
 
-
+[WH strain from now on, so how does pollen effect swimming cell growth?](third-analysis.html)
 
 
 

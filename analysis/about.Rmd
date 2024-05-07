@@ -10,7 +10,13 @@ editor_options:
 
 ---
 
+### Thesis title
+
 > Reducing infection once and floral: Examining the effects of different pollen diets on *in vitro* growth and attachment of *C. bombi*, a parasite of bumblebees.
+
+---
+
+#### Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University.
 
 ---
 
@@ -29,15 +35,10 @@ editor_options:
 
 ---
 
-### [Presentations](presentations.html)
-
 ### Publications (in progress)
 
 [Genetic modification of the bee parasite *Crithidia bombi* for improved visualization and protein localization](https://www.biorxiv.org/content/10.1101/2024.01.18.576273v1)
 
----
-
-#### Working in [Dr. Megan Povelones Lab](https://megpovelab.com/) at Villanova University
 
 ---
 
@@ -45,5 +46,5 @@ editor_options:
 
 ---
 
-
+## [Take me to the start of your research project!](second-analysis.html)
 

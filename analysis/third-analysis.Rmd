@@ -26,6 +26,8 @@ Quantifying swimming *C. bombi* cell growth in the presence of BW or SF pollen e
 
 *C. bombi* was transfected with an episomal construct containing Nanoluciferase (Nluc), a constitutively expressed Nluc reporter, and a Hygromycin cassette for selection.
 
+![](assets/plasmid.png)
+
 Growth was measured in Relative Light Units (RLU) using a plate reader and normalized to the plate using a standard dilution series from 1E1 to 1E6 cells/well to capture cell density in cells/mL.
 
 <br>
@@ -77,6 +79,8 @@ Figure 1. Growth curve of swimming *C. bombi* WH Nluc cells without exines (blue
 
 
 
+
+[Swimming cell growth is not affected by SF exines, is initial attachment affected?](fourth-analysis.html)
 
 
 
