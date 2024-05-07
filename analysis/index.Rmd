@@ -14,11 +14,19 @@ editor_options:
 
 ---
 
+
+![](assets/intro.png){ width=200px } 
+
+---
+
+![<span style="font-size: smaller;">*C. bombi* transfected with RFP and DAPI stained</span>](assets/image0004.png){ width=200px }
+
+---
+
 My name is Faith St. Clair -- I am a graduate student and research assistant at Villanova University with a focus in molecular and cell biology. 
 
 I research the effects of different pollen diets on attachment and infection of a parasite of bumblebees, *C. bombi*, and their impact on pollinator health and ecosystem status.
 
-<br>
 
 ---
 
