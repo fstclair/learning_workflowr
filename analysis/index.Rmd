@@ -19,7 +19,7 @@ editor_options:
 
 ---
 
-![<span style="font-size: smaller;">*C. bombi* transfected with RFP and DAPI stained</span>](assets/image0004.png){ width=200px }
+![<span style="font-size: smaller;">*C. bombi* expressing RFP and DAPI stained</span>](assets/image0004.png){ width=200px }
 
 ---
 

@@ -19,6 +19,7 @@ editor_options:
 
   - Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
 
+  
 - After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for analysis. 
 
 - After imaging, dishes were gently washed with 2 mL of media and resuspended in 2 mL media for the next 24 hour incubation period.
@@ -293,7 +294,7 @@ Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48,
 # Protocol
 
 Adapted from [Denecke, S., 2022](https://doi.org/10.1101/2022.10.06.511084)
-Created using [biorender.com](biorender.com)
+Created using [biorender.com](https://biorender.com)
 
 ![](assets/attachassay.png)
 
