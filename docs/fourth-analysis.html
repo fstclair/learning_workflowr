@@ -11,9 +11,9 @@
 
 <meta name="author" content="fstclair" />
 
-<meta name="date" content="2024-02-22" />
+<meta name="date" content="2024-05-06" />
 
-<title>workflowr_setup</title>
+<title>Attachment assay with pollen exines: buckwheat &amp; sunflower</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -390,9 +390,10 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">workflowr_setup</h1>
+<h1 class="title toc-ignore">Attachment assay with pollen exines:
+buckwheat &amp; sunflower</h1>
 <h4 class="author">fstclair</h4>
-<h4 class="date">2024-02-22</h4>
+<h4 class="date">2024-05-06</h4>
 
 </div>
 
@@ -400,7 +401,7 @@ div.tocify {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -411,8 +412,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -425,9 +426,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>learning_workflowr/</code> <span
@@ -537,15 +538,57 @@ run.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongabsolute">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>File paths:</strong> absolute </a>
 </p>
 </div>
-<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div id="strongFilepathsstrongabsolute" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great job! Using relative paths to the files within your workflowr
-project makes it easier to run your code on other machines.</p>
+<p>
+Using absolute paths to the files within your workflowr project makes it
+difficult for you and others to run your code on a different machine.
+Change the absolute path(s) below to the suggested relative path(s) to
+make your code more reproducible.
+</p>
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th style="text-align:left;">
+absolute
+</th>
+<th style="text-align:left;">
+relative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_s.csv
+</td>
+<td style="text-align:left;">
+data/p_aa_s.csv
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_ir.csv
+</td>
+<td style="text-align:left;">
+data/p_aa_ir.csv
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_mr.csv
+</td>
+<td style="text-align:left;">
+data/p_aa_mr.csv
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -618,8 +661,8 @@ have uncommitted changes.
 
 <p>
 These are the previous versions of the repository in which changes were
-made to the R Markdown (<code>analysis/workflowr_setup.Rmd</code>) and
-HTML (<code>docs/workflowr_setup.html</code>) files. If you’ve
+made to the R Markdown (<code>analysis/fourth-analysis.Rmd</code>) and
+HTML (<code>docs/fourth-analysis.html</code>) files. If you’ve
 configured a remote Git repository (see <code>?wflow_git_remote</code>),
 click on the hyperlinks in the table below to view the files as they
 were in that past version.
@@ -648,444 +691,19 @@ Message
 <tbody>
 <tr>
 <td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/42cdf4959b50e2e99759555d1f8fca9468c6130e/docs/workflowr_setup.html" target="_blank">42cdf49</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-05-06
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/c0b554699ad1b4398b6bb0879817affb1ceef854/docs/workflowr_setup.html" target="_blank">c0b5546</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-17
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/fba4ce16f07e46ee310e53b188492c57bfa91e98/docs/workflowr_setup.html" target="_blank">fba4ce1</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-17
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/943cb56d0a5bd620ec524f0f3c35680bdb33ce22/docs/workflowr_setup.html" target="_blank">943cb56</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-14
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/02db3a063a1cd59d3861f5c5c6f398a366e6406b/docs/workflowr_setup.html" target="_blank">02db3a0</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-14
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/747116e5c7d124ccd7d931401ded598b9e841f28/docs/workflowr_setup.html" target="_blank">747116e</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-14
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/25c6872fb7d9d898da0bb2c2fc2dcdb5f034995f/docs/workflowr_setup.html" target="_blank">25c6872</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-13
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/56ac182966c37acf32add9c2e6346151b63b36f5/docs/workflowr_setup.html" target="_blank">56ac182</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-12
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/712ef7fa66632867f8ba8a9e450f8c09d2f36972/docs/workflowr_setup.html" target="_blank">712ef7f</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-05
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/ac916aba8a55b160f9598b746a6e2026d5594b11/docs/workflowr_setup.html" target="_blank">ac916ab</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-05
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/1e3dc02517031726a3acc7ec8d905298b4ddd559/docs/workflowr_setup.html" target="_blank">1e3dc02</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-05
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/4ea6bfa4eca3872e612c59830a4ef54481365ebd/docs/workflowr_setup.html" target="_blank">4ea6bfa</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-05
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/e76468646bcc8c1db9c1ea034235805f8f38ad47/docs/workflowr_setup.html" target="_blank">e764686</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-05
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/2f192df3ccb82118f131abc4fb8b427d8a144900/docs/workflowr_setup.html" target="_blank">2f192df</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-01
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/94da33b893c80bf132bd8349d63fafdb21cc73b9/docs/workflowr_setup.html" target="_blank">94da33b</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-01
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/cf7f56a048dd94fd05b69f00cd46ec6410cddd66/docs/workflowr_setup.html" target="_blank">cf7f56a</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-01
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/76685adff74db0df9e81f2fe121ea6486c8608d0/docs/workflowr_setup.html" target="_blank">76685ad</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-03-01
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/c74ed28a66ee3205b876e167500bb57f5752e7c4/docs/workflowr_setup.html" target="_blank">c74ed28</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-29
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/eabd377fd7bef0d8a0b3d206dfa2396335b9f8c3/docs/workflowr_setup.html" target="_blank">eabd377</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-29
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/afd35c24aabe2291a553cebefbb629cfa7cb4f70/docs/workflowr_setup.html" target="_blank">afd35c2</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-29
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/55dbfc206aa52e8d750286b044998dd92cc0ca08/docs/workflowr_setup.html" target="_blank">55dbfc2</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-29
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/b49bbae41107081b3f96059927be973bea361973/docs/workflowr_setup.html" target="_blank">b49bbae</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-29
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/36daa5687dbe60b8bf26a629f54fe75f396d331d/docs/workflowr_setup.html" target="_blank">36daa56</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-27
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/f7f67fa69d2f6a4b6c204905e9d74a38413c1d00/docs/workflowr_setup.html" target="_blank">f7f67fa</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-27
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/fstclair/learning_workflowr/3c2e5da56de2f678d3a19949056704a9a0bd631a/docs/workflowr_setup.html" target="_blank">3c2e5da</a>
-</td>
-<td>
-fstclair
-</td>
-<td>
-2024-02-22
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/fstclair/learning_workflowr/blob/f10d81e5b8e1c4b1e1460b684b781e8f01e4c260/analysis/workflowr_setup.Rmd" target="_blank">f10d81e</a>
+<a href="https://github.com/fstclair/learning_workflowr/blob/a891ce9cca623ec6edb256cc429ab6ad9193ff17/analysis/fourth-analysis.Rmd" target="_blank">a891ce9</a>
 </td>
 <td>
 fstclair
 </td>
 <td>
-2024-02-22
+2024-05-07
 </td>
 <td>
-Add instructions for workflowr use
+Publish about page and all pages
 </td>
 </tr>
 </tbody>
@@ -1095,8 +713,70 @@ Add instructions for workflowr use
 </div>
 </div>
 </div>
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
+<div
+id="violin-plots-of-c.-bombi-attachment-assay-with-the-addition-of-bw-or-sf-exine-media"
+class="section level1">
+<h1>Violin plots of <em>C. bombi</em> attachment assay with the addition
+of BW or SF exine media</h1>
+<hr />
+<div id="description" class="section level4">
+<h4>Description</h4>
+<p>Quantifying the attachment of <em>C. bombi</em> in the presence of
+two different pollen exines (outer shell of pollen): sunflower and
+buckwheat.</p>
+<p>Number of single attached cells, individual rosettes, or merged
+rosettes counted over 72 hours.</p>
+<p>After 24 hours, dishes of cells were gently washed with 2 mL of PBS
+for clear imaging of 25 random fields for swimming-cell clear image
+analysis.</p>
+<p>After imaging, dishes were gently washed with 2 mL of respective
+pollen exine media and resuspended in 2 mL exine media for the next 24
+hour incubation period.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="single-attached-cells" class="section level3">
+<h3>Single attached cells</h3>
+<p><img src="figure/fourth-analysis.Rmd/single_attached_cells-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Figure 1. Violin plot of 3 replicates of individually counted cells
+per field in cell line WHA1 in two treatment groups: buckwheat pollen
+exines (BW) and sunflower pollen exines (SF) over 72 hours. Black
+crossbars represent the mean. The data show a statistically significant
+difference in initial single cell attachment at 24 hours. Single cell
+attachment at 72 hours most likely due to cell division in the center of
+large rosettes finding a spot to adhere close by.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="individual-rosettes" class="section level3">
+<h3>Individual rosettes</h3>
+<p><img src="figure/fourth-analysis.Rmd/individual_rosettes-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Figure 2. Violin plot of 3 replicates of individual rosettes per
+field in cell line WHA1 in two treatment groups: buckwheat pollen exines
+(BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars
+represent the mean. The data show a statistically significant difference
+number of rosettes at each time point. An unexpected sharp drop in
+number of rosettes in sunflower exine media samples lead to the
+discussion of the exine media wash steps before next incubation period
+abrading attached cells.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="merged-rosettes" class="section level3">
+<h3>Merged rosettes</h3>
+<p><img src="figure/fourth-analysis.Rmd/merged_rosettes-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Figure 3. Violin plot of 3 replicates of merged rosettes per field in
+cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and
+sunflower pollen exines (SF) over 72 hours. Black crossbars represent
+the mean. The data show similar results to the initial attachment
+assay.</p>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="protocol" class="section level1">
+<h1>Protocol</h1>
+<p><img src="assets/exattachassay.png" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -1124,20 +804,35 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] workflowr_1.7.1
+[1] viridis_0.6.5     viridisLite_0.4.2 hrbrthemes_0.8.7  forcats_1.0.0    
+[5] ggplot2_3.4.4     dplyr_1.1.4       tidyr_1.3.1       workflowr_1.7.1  
 
 loaded via a namespace (and not attached):
- [1] vctrs_0.6.5       httr_1.4.7        cli_3.6.2         knitr_1.45       
- [5] rlang_1.1.3       xfun_0.42         stringi_1.8.3     processx_3.8.3   
- [9] promises_1.2.1    jsonlite_1.8.8    glue_1.7.0        rprojroot_2.0.4  
-[13] git2r_0.33.0      htmltools_0.5.7   httpuv_1.6.14     ps_1.7.6         
-[17] sass_0.4.8        fansi_1.0.6       rmarkdown_2.25    jquerylib_0.1.4  
-[21] tibble_3.2.1      evaluate_0.23     fastmap_1.1.1     yaml_2.3.8       
-[25] lifecycle_1.0.4   whisker_0.4.1     stringr_1.5.1     compiler_4.3.2   
-[29] fs_1.6.3          pkgconfig_2.0.3   Rcpp_1.0.12       rstudioapi_0.15.0
-[33] later_1.3.2       digest_0.6.34     R6_2.5.1          utf8_1.2.4       
-[37] pillar_1.9.0      callr_3.7.3       magrittr_2.0.3    bslib_0.6.1      
-[41] tools_4.3.2       cachem_1.0.8      getPass_0.2-4    </code></pre>
+ [1] gtable_0.3.4            xfun_0.42               bslib_0.6.1            
+ [4] processx_3.8.3          callr_3.7.3             vctrs_0.6.5            
+ [7] tools_4.3.2             ps_1.7.6                generics_0.1.3         
+[10] curl_5.2.0              tibble_3.2.1            fansi_1.0.6            
+[13] highr_0.10              pkgconfig_2.0.3         lifecycle_1.0.4        
+[16] farver_2.1.1            compiler_4.3.2          stringr_1.5.1          
+[19] git2r_0.33.0            munsell_0.5.0           getPass_0.2-4          
+[22] httpuv_1.6.14           fontquiver_0.2.1        fontLiberation_0.1.0   
+[25] htmltools_0.5.7         sass_0.4.8              yaml_2.3.8             
+[28] Rttf2pt1_1.3.12         later_1.3.2             pillar_1.9.0           
+[31] crayon_1.5.2            jquerylib_0.1.4         whisker_0.4.1          
+[34] extrafontdb_1.0         ellipsis_0.3.2          gfonts_0.2.0           
+[37] cachem_1.0.8            mime_0.12               fontBitstreamVera_0.1.1
+[40] tidyselect_1.2.0        digest_0.6.34           stringi_1.8.3          
+[43] purrr_1.0.2             labeling_0.4.3          extrafont_0.19         
+[46] rprojroot_2.0.4         fastmap_1.1.1           grid_4.3.2             
+[49] colorspace_2.1-0        cli_3.6.2               magrittr_2.0.3         
+[52] crul_1.4.0              utf8_1.2.4              withr_3.0.0            
+[55] gdtools_0.3.6           scales_1.3.0            promises_1.2.1         
+[58] rmarkdown_2.25          httr_1.4.7              gridExtra_2.3          
+[61] shiny_1.8.0             evaluate_0.23           knitr_1.45             
+[64] rlang_1.1.3             Rcpp_1.0.12             xtable_1.8-4           
+[67] glue_1.7.0              httpcode_0.3.0          rstudioapi_0.15.0      
+[70] jsonlite_1.8.8          R6_2.5.1                systemfonts_1.0.5      
+[73] fs_1.6.3               </code></pre>
 </div>
 </div>
 
