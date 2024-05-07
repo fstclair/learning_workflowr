@@ -106,6 +106,7 @@ wflow_git_commit(all=TRUE)
 
 wflow_open("analysis/fourth-analysis.Rmd")
 
+wflow_git_commit("docs/assets/*.png")
 
 # creating a new file so i can add pictures
 

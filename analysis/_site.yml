@@ -12,13 +12,15 @@ navbar:
     - text: "Research"
       icon: fa-flask
       menu:
+        - text: "Cell line analysis"
+        - text: "Cell line attachment assay"
+          href: second-analysis.html
+        - text: "---------"
         - text: "Swimming cell analysis"
         - text: "Swimming cell growth with pollen exines"
           href: third-analysis.html
         - text: "---------"
-        - text: "Attached cell analyses"
-        - text: "Cell line attachment assay"
-          href: second-analysis.html
+        - text: "Attached cell analyses with pollen"
         - text: "Pollen exine attachment assay"
           href: fourth-analysis.html
         - text: "Pollen exine wash attachment assay"
