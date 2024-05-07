@@ -10,7 +10,7 @@ editor_options:
 
 ---
 
-# Welcome to my research website!
+# Welcome to my thesis research website!
 
 ---
 

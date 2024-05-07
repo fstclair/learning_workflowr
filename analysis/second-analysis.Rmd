@@ -19,6 +19,8 @@ Number of single attached cells, individual rosettes, or merged rosettes counted
 
 After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for analysis. 
 
+After imaging, dishes were gently washed with 2 mL of media and resuspended in 2 mL media for the next 24 hour incubation period.
+
 <br>
 
 ---
@@ -67,7 +69,7 @@ df %>%
 
 ```
 
-Figure 1. Grouped violin plot of 3 replicates of individually counted cells per field in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 4).
+Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 4).
 
 
 <br>

@@ -1,0 +1,193 @@
+---
+title: "Attachment assay with pollen exines: buckwheat & sunflower"
+author: "fstclair"
+date: "2024-05-06"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+
+# Violin plots of *C. bombi* attachment assay with the addition of BW or SF exine media
+
+---
+
+#### Description
+
+Quantifying the attachment of *C. bombi* in the presence of two different pollen exines (outer shell of pollen): sunflower and buckwheat.
+
+Number of single attached cells, individual rosettes, or merged rosettes counted over 72 hours.
+
+After 24 hours, dishes of cells were gently washed with 2 mL of PBS for clear imaging of 25 random fields for swimming-cell clear image analysis. 
+
+After imaging, dishes were gently washed with 2 mL of respective pollen exine media and resuspended in 2 mL exine media for the next 24 hour incubation period.
+
+<br>
+
+---
+
+### Single attached cells
+
+```{r single_attached_cells, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data p_aa_s.csv
+
+#read.csv("p_aa_s.csv")
+
+df <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_s.csv") #set data name
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(hrbrthemes)
+library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("coral", "goldenrod1")
+
+#now make the graph
+
+df %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill=TREATMENT, y=CELLS, x=HOUR)) +
+    geom_violin(position = "dodge", scale = "width") +
+  stat_summary(fun = "median", fun.args = list(mult = 1),
+               geom = "crossbar", width = 0.5, color= "black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_light()  +
+    labs(x = "Hour",
+       y = "Number of individual attached cells per field",
+       fill = "Treatment")
+
+
+```
+
+Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference in initial single cell attachment at 24 hours. Single cell attachment at 72 hours most likely due to cell division in the center of large rosettes finding a spot to adhere close by.
+
+
+<br>
+
+---
+
+
+### Individual rosettes
+
+
+
+```{r individual_rosettes, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data p_aa_ir.csv
+
+#read.csv("p_aa_ir.csv")
+
+df1 <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_ir.csv") #set data name
+
+# library(tidyr)
+# library(dplyr)
+# library(ggplot2)
+# library(forcats)
+# library(hrbrthemes)
+# library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("coral", "goldenrod1")
+
+#now make the graph
+
+df1 %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill=TREATMENT, y=CELLS, x=HOUR)) +
+    geom_violin(position = "dodge", scale = "width") +
+  stat_summary(fun = "median", fun.args = list(mult = 1),
+               geom = "crossbar", width = 0.5, color = "black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_light()  +
+    labs(x = "Hour",
+       y = "Number of individual rosettes per field",
+       fill = "Treatment")
+
+```
+
+Figure 2.  Violin plot of 3 replicates of individual rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference number of rosettes at each time point. An unexpected sharp drop in number of rosettes in sunflower exine media samples lead to the discussion of the exine media wash steps before next incubation period abrading attached cells.
+
+<br>
+
+---
+
+
+### Merged rosettes
+
+```{r merged_rosettes, echo=FALSE, message=FALSE, warning=FALSE}
+
+#import the data p_aa_mr.csv
+
+#read.csv("p_aa_mr.csv")
+
+df2 <- read.csv("~/Desktop/Coding/workflowr/learning_workflowr/data/p_aa_mr.csv") #set data name
+
+# library(tidyr)
+# library(dplyr)
+# library(ggplot2)
+# library(forcats)
+# library(hrbrthemes)
+# library(viridis)
+
+
+# grouped violin plot
+
+#set the colors
+
+colors <- c("coral", "goldenrod1")
+
+#now make the graph
+
+df2 %>%
+  mutate(HOUR = factor(HOUR, levels=c("24", "48", "72"))) %>%
+  ggplot(aes(fill = TREATMENT, y = CELLS,x = HOUR)) +
+    geom_violin(position = "dodge", scale = "width") +
+  stat_summary(fun = "mean", fun.args = list(mult = 1),
+               geom = "crossbar", width = 0.5, color = "black",
+               shape = 18, size = 0.5,
+               position = position_dodge(width = 0.9)) + 
+  scale_fill_manual(values = colors) +
+    theme_light()  +
+    labs(x = "Hour",
+       y = "Number of merged rosettes per field",
+       fill = "Treatment")
+
+```
+
+Figure 3.  Violin plot of 3 replicates of merged rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show similar results to the initial attachment assay.
+
+
+
+<br>
+
+---
+
+# Protocol
+
+![](assets/exattachassay.png)
+
+
+
+
+
+
+
+
+
+
