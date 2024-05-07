@@ -20,16 +20,9 @@ editor_options:
 
 <br>
 
+![](assets/labpic4.png){ width=200px } ![](assets/1labpic.png){ width=200px } 
 
-![](assets/labpic1.png){ width=200px } 
-
-![](assets/labpic2.png){ width=200px }
-
-
-![](assets/labpic3.png){ width=200px } 
-
-![](assets/labpic4.png){ width=200px }
-
+![](assets/labpic2.png){ width=200px } ![](assets/33labpic.png){ width=200px } 
 
 Pove Lab <3
 
@@ -60,6 +53,10 @@ Pove Lab <3
 ---
 
 #### This material is based upon work supported by the National Science Foundation under grant number 2128223.
+
+Collaborative IntBio Grant - head PI Dr. Lynn Adler (UMass Amherst)
+
+![](assets/intobio.png){ width=400px }
 
 <br>
 
