@@ -6,7 +6,7 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "About the project"
+    - text: "About"
       icon: fa-question
       href: about.html
     - text: "Research"
@@ -31,6 +31,7 @@ navbar:
     href: https://github.com/fstclair/learning_workflowr
 output:
   workflowr::wflow_html:
+    css: "custom.css"
     toc: yes
     toc_float: yes
     theme: darkly
