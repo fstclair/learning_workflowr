@@ -72,6 +72,7 @@ wflow_open("analysis/third-analysis.Rmd")
 #opening the index and adding a link to view results on intro page Click on this [link](first-analysis.html) to see my results.
 wflow_open("analysis/index.Rmd")
 
+wflow_open("analysis/presentations.Rmd")
 
 #view the status of the workflowr project
 wflow_status()
@@ -102,6 +103,8 @@ wflow_git_push()
 
 wflow_git_commit(all=TRUE)
 
+
+wflow_open("analysis/fourth-analysis.Rmd")
 
 
 # creating a new file so i can add pictures

@@ -71,6 +71,27 @@ df %>%
 
 Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show a similar amount of singly attached cells at 24 and 48 hours between the two cell lines, and an increase in WHA1 singly attached cells at 72 hours. This increase in WHA1 at 72 hours is most likely due to cells dividing in the center of large rosettes and not having enough room to adhere, but still having the signal to adhere, so they lift up and re-attach as quickly as they can (see Figure 4).
 
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#ANOVA test
+?aov
+
+## single attached cells ##
+#import dataset AA_08_WH_S_R.csv
+
+S <- aov(AA_08_WH_S_R$V2~AA_08_WH_S_R$V1)
+summary(S)
+#run shapiro test on residuals
+res <- residuals(S)
+res
+shapiro.test(res)
+#satisfied - W = 0.79347, p-value < 2.2e-16
+#Tukey test
+HSD.S <- HSD.test(S, "AA_08_WH_S_R$V1")
+HSD.S
+```
+
 
 <br>
 
@@ -123,6 +144,32 @@ df1 %>%
 
 Figure 2.  Grouped violin plot of 3 replicates of individual rosettes per field counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show in increase of WHA1 rosettes in all three time points. A decrease of WHA1 individual rosettes at 72 hours can be explained by the increase of WHA1 merged rosettes at 72 hours (see Figures 3 and 4).
 
+
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+## individual rosettes ##
+#import dataset AA_08_WH_IR_R.csv
+
+AA <- aov(AA_08_WH_IR_R$V2~AA_08_WH_IR_R$V1)
+summary(AA)
+#run shapiro test on residuals
+res <- residuals(AA)
+res
+shapiro.test(res)
+#satisfied - W = 0.93755, p-value = 8.451e-13
+#Tukey test
+install.packages("agricolae")
+library(agricolae)
+?HSD.test
+HSD.AA <- HSD.test(AA, "AA_08_WH_IR_R$V1")
+HSD.AA
+
+
+```
+
+
 <br>
 
 ---
@@ -173,6 +220,26 @@ df2 %>%
 
 Figure 3.  Grouped violin plot of 3 replicates of merged rosettes per field counted in cell lines 08.076 (blue) and WHA1 (pink) over 72 hours. Black crossbars represent the mean. The data show that while the 08.076 cell line remains a consistent low amount of merged rosettes, the WHA1 cell line gradually increases in merged rosette counts over 72 hours.
 
+
+#### Statistical significance
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+## merged rosettes ##
+#import dataset AA_08_WH_MR_R.csv
+
+MR <- aov(AA_08_WH_MR_R$V2~AA_08_WH_MR_R$V1)
+summary(MR)
+#run shapiro test on residuals
+res <- residuals(MR)
+res
+shapiro.test(res)
+#satisfied - W = 0.6166, p-value < 2.2e-16
+#Tukey test
+HSD.MR <- HSD.test(MR, "AA_08_WH_MR_R$V1")
+HSD.MR
+
+```
 
 
 <br>

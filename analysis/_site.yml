@@ -1,20 +1,28 @@
 name: learning_workflowr
 output_dir: ../docs
 navbar:
-  title: Learning workflowr
+  title: Faith St. Clair
   left:
-  - text: Home
-    href: index.html
-  - text: Swimming cell growth with BW & SF
-    href: third-analysis.html
-  - text: 08.076 & WHA1 attachment assay
-    href: second-analysis.html
-  - text: BW & SF wash attachment assay
-    href: first-analysis.html
-  - text: About
-    href: about.html
-  - text: License
-    href: license.html
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "About the project"
+      icon: fa-question
+      href: about.html
+    - text: "Research"
+      icon: fa-flask
+      menu:
+        - text: "Swimming cell analysis"
+        - text: "Swimming cell growth with pollen exines"
+          href: third-analysis.html
+        - text: "---------"
+        - text: "Attached cell analyses"
+        - text: "Cell line attachment assay"
+          href: second-analysis.html
+        - text: "Pollen exine attachment assay"
+          href: fourth-analysis.html
+        - text: "Pollen exine wash attachment assay"
+          href: first-analysis.html
   right:
   - icon: fab fa-github
     text: Source code
