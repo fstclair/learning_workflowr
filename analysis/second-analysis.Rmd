@@ -294,6 +294,7 @@ Figure 4. Sample images of 08.076 (08) and WHA1 (WH) attachment assay at 24, 48,
 # Protocol
 
 Adapted from [Denecke, S., 2022](https://doi.org/10.1101/2022.10.06.511084)
+
 Created using [biorender.com](https://biorender.com)
 
 ![](assets/attachassay.png)
