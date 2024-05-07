@@ -54,9 +54,9 @@ Pove Lab <3
 
 #### This material is based upon work supported by the National Science Foundation under grant number 2128223.
 
-Collaborative IntBio Grant - head PI Dr. Lynn Adler (UMass Amherst)
+Collaborative IntBio Grant - head PI, Dr. Lynn Adler (UMass Amherst)
 
-![](assets/intobio.png){ width=400px }
+![](assets/intbio1.png){ width=400px }
 
 <br>
 
