@@ -74,7 +74,7 @@ df %>%
 Figure 1. Violin plot of 3 replicates of individually counted cells per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference in initial single cell attachment at 24 hours. Single cell attachment at 72 hours most likely due to cell division in the center of large rosettes finding a spot to adhere close by.
 
 
-#### Statistical significance two-way ANOVA with Tukey's Test
+#### Statistical significance by two-way ANOVA with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 #ANOVA test
@@ -157,7 +157,7 @@ df1 %>%
 Figure 2.  Violin plot of 3 replicates of individual rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show a statistically significant difference number of rosettes at each time point. An unexpected sharp drop in number of rosettes in sunflower exine media samples lead to the discussion of the exine media wash steps before next incubation period abrading attached cells.
 
 
-#### Statistical significance two-way ANOVA with Tukey's Test
+#### Statistical significance by two-way ANOVA with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
@@ -239,7 +239,7 @@ df2 %>%
 
 Figure 3.  Violin plot of 3 replicates of merged rosettes per field in cell line WHA1 in two treatment groups: buckwheat pollen exines (BW) and sunflower pollen exines (SF) over 72 hours. Black crossbars represent the mean. The data show similar results to the initial attachment assay.
 
-#### Statistical significance two-way ANOVA with Tukey's Test
+#### Statistical significance by two-way ANOVA with Tukey's Test
 
 ```{r echo=FALSE, message=FALSE, results=FALSE, warning=FALSE}
 
