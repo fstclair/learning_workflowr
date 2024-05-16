@@ -12,6 +12,10 @@ navbar:
     - text: "Research"
       icon: fa-flask
       menu:
+        - text: "Getting started"
+        - text: "Abstract"
+          href: abstract.html
+        - text: "---------"
         - text: "Cell line analysis"
         - text: "Cell line attachment assay"
           href: second-analysis.html

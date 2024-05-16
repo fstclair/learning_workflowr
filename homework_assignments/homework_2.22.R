@@ -114,7 +114,7 @@ dir.create("docs/assets")
 
 wflow_open("analysis/second-analysis.Rmd")
 
-
+wflow_open("analysis/abstract.Rmd")
 
 
 
