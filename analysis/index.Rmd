@@ -23,7 +23,7 @@ editor_options:
 
 ---
 
-My name is Faith St. Clair -- I am a graduate student and research assistant at Villanova University with a focus in molecular and cell biology. 
+My name is Faith St. Clair -- I am a research assistant and recent master's graduate of Villanova University with a focus in molecular and cell biology. 
 
 I research the effects of different pollen diets on attachment and infection of a parasite of bumblebees, *C. bombi*, and their impact on pollinator health and ecosystem status.
 
