@@ -1,0 +1,60 @@
+---
+title: "Background"
+author: "fstclair"
+date: "2024-05-16"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+<br>
+
+---
+
+## Abstract
+
+---
+
+*Crithidia bombi* is a parasite of bumblebees that reduces the fitness and reproductive capacity of its host. Like most monoxenous trypanosomatids, *C. bombi* colonize their insect host by attaching to the hindgut. Certain floral diets, particularly sunflower pollen, can prevent or even clear infections through an unknown mechanism. Quantifying *C. bombi* can be difficult using manual counting methods, as samples are flooded with feces, pollen, and other contaminants. Previous work used a constitutively expressed NanoLuciferase reporter to quantitate growth of the related parasite, *C. fasciculata*, both in culture and in hindguts of its natural host, the mosquito. I have now introduced this construct into *C. bombi* and have confirmed that it can be used to accurately determine cell density, even in the presence of pollen, *in vitro*. An optimized NanoLuciferase assay concluded pollen components do not affect the growth of swimming *C. bombi* cells. Attachment is thought to be essential for parasite colonization and infection of the insect host. To understand attachment efficiency of different cell lines and the effect of pollen components on attached cells, I have adapted a *C. fasciculata* *in vitro* attachment assay for *C. bombi*. I have compared our two culture-adapted *C. bombi* strains: WH and 08.076. Only WH has retained the ability to infect laboratory colonies of the bumblebee, *Bombus impatiens*, and shows significantly greater attachment *in vitro*. These results suggest a correlation between attachment and infectivity, study of which could be relevant for other trypanosomatids. The addition of pollen components to the attachment assay shows sunflower pollen reduces initial parasite attachment and growth during attachment, suggesting a possible mechanism for the reduced infection rates associated with feeding on sunflower pollen *in vivo*.
+
+
+---
+
+<br>
+
+
+---
+
+## *C. bombi* Life Cycle
+
+![](assets/lifecycle.png){ width=500px }
+<br>
+
+Figure 1. The transmission cycle of *C. bombi* between colonies via the fecal-oral route. Bumblebees will feed on a flower contaminated with the parasite. The *C. bombi* is ingested and adheres to the hindgut of the bumblebee where it can divide to form rosettes. When the bee defecates on a flower, the parasites are deposited and can be picked up by another foraging bumblebee.
+
+<br>
+
+![](assets/adhesion.png){ width=500px }
+<br>
+
+Figure 2. This attachment is what I focus on *in vitro* (left). Interestingly, we can observe *C. bombi* attachment inside the bumblebee hindgut with genetically modified *C. bombi* expressing green fluorescent protein (GFP) (right, picture by Sonja Glasser - UMass Amherst).
+
+---
+
+<br>
+
+---
+
+<br>
+
+---
+
+---
+
+## [Let's investigate attachment between the two strains of *C. bombi*](second-analysis.html)
+
+---
+
+---
+
+

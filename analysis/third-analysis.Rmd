@@ -1,5 +1,5 @@
 ---
-title: "Measuring growth of swimming C. bombi cells in the presence of SF and BW pollen exines"
+title: "Swimming cells in the presence of SF and BW pollen exines"
 author: "fstclair"
 date: "2024-03-01"
 output: workflowr::wflow_html
