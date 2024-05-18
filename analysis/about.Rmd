@@ -22,7 +22,7 @@ editor_options:
 
 1. Attachment assay to observe and quantify *in vitro* attachment between two cell lines.
 
-2. Transfect an episomal construct containing Nanoluciferase and a Hygromycin cassette (for selection) for easier and accurate quantitation in the presence of pollen.
+2. Transfect an episomal construct containing Nanoluciferase and a Hygromycin cassette (for selection) for easier and accurate parasite quantitation in the presence of pollen.
 
 3. Growth curve by plate reader to quantify *in vitro* swimming cell growth in the presence of pollen exines.
 
@@ -95,4 +95,3 @@ The University of Texas at Austin
 ---
 
 ---
-
