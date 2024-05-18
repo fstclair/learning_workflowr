@@ -127,7 +127,7 @@ Images created with [biorender.com](https://biorender.com)
 ---
 
 
-## [Swimming cell growth is not affected by SF exines, is initial attachment affected?](fourth-analysis.html)
+## [Swimming cell growth is not affected by pollen, does pollen have an effect on initial attachment?](fourth-analysis.html)
 
 
 ---
